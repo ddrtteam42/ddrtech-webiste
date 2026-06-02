@@ -1,0 +1,47 @@
+import React from 'react';
+import Container from '../ui/Container';
+import Button from '../ui/Button';
+import { scrollToSection } from '../../utils/scrollUtils';
+import heroImage from '../../assets/images/heroimage.png';
+import './Hero.css';
+
+export default function Hero() {
+  return (
+    <Container>
+      <section className="hero" id="home">
+        <div className="hero-left">
+          <div className="hero-badge">
+            We Build Digital Solutions
+          </div>
+
+           <h1>
+            We Build<span> Websites </span>& 
+            <span> Mobile Apps</span>
+            That Drive Growth
+          </h1>
+
+
+          <p>
+            Cloud Tech is a full-service digital company that helps businesses
+            go online with powerful websites, mobile apps and software solutions
+            for startups, businesses and enterprises.
+          </p>
+
+          <div className="hero-buttons">
+            <Button onClick={() => scrollToSection('services')}>Our Services</Button>
+            <Button variant="outline" onClick={() => scrollToSection('contact')}>Contact Us</Button>
+          </div>
+        </div>
+
+        <div className="hero-right">
+          <div className="mockup-container">
+            <div className="glow-effect"></div>
+            <div className="device-mockup">
+              <img src={heroImage} alt="Cloud Tech Services - Modern Device Mockup" className="hero-image" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </Container>
+  );
+}

@@ -1,0 +1,248 @@
+.hero {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 40px;
+    align-items: center;
+    min-height: auto;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-badge {
+    display: inline-block;
+    border: 1px solid #2563eb;
+    padding: 10px 18px;
+    border-radius: 999px;
+    color: #60a5fa;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.hero h1 {
+    font-size: 50px;
+    line-height: 1.05;
+    margin-bottom: 28px;
+    font-weight: 900;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 100%;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hero-right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.mockup-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glow-effect {
+    position: absolute;
+    width: 100%;
+    max-width: 850px;
+    aspect-ratio: 1;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.4) 0%, rgba(37, 99, 235, 0.1) 70%, transparent 100%);
+    filter: blur(100px);
+    border-radius: 50%;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.device-mockup {
+    position: relative;
+    width: 100%;
+    max-width: 980px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 980px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px 0;
+    }
+
+    .hero-left {
+        order: 1;
+    }
+
+    .hero-right {
+        order: 2;
+        height: auto;
+    }
+
+    .hero h1 {
+        font-size: 64px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .device-mockup {
+        max-width: 850px;
+    }
+
+    .hero-image {
+        max-width: 850px;
+    }
+
+    .glow-effect {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 0;
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero-buttons button,
+    .hero-buttons a {
+        width: 100%;
+    }
+
+    .hero-right {
+        max-height: none;
+        height: auto;
+    }
+
+    .device-mockup {
+        max-width: 700px;
+    }
+
+    .hero-image {
+        max-width: 700px;
+    }
+
+    .glow-effect {
+        max-width: 550px;
+    }
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-15px);
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 30px 0;
+        gap: 25px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero-badge {
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+
+    .hero-right {
+        max-height: none;
+        height: auto;
+    }
+
+    .device-mockup {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .glow-effect {
+        max-width: 350px;
+    }
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+}
+
