@@ -5,7 +5,7 @@ const testimonials = [
     position: "CEO, Mehta Traders",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
     rating: 5,
-    text: "Cloud Tech delivered an amazing website for our business. They understood our needs perfectly."
+    text: "Digital Drive Resource Private Limited delivered an amazing website for our business. They understood our needs perfectly."
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const testimonials = [
     position: "Marketing Head, Bright Future",
     image: "https://randomuser.me/api/portraits/women/68.jpg",
     rating: 5,
-    text: "Great experience working with Cloud Tech. They are creative, reliable and supportive."
+    text: "Great experience working with Digital Drive Resource Private Limited. They are creative, reliable and supportive."
   }
 ];
 

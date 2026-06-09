@@ -5,12 +5,25 @@ nav {
     padding: 10px 0;
 }
 
-.logo {
+.logo-button {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 32px;
-    font-weight: 800;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: .3s;
+}
+
+.logo-button:hover {
+    opacity: 0.8;
+}
+
+.logo-image {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
 }
 
 .logo i {
@@ -47,5 +60,9 @@ nav {
     .nav-links {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .logo-image {
+        height: 40px;
     }
 }

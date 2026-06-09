@@ -10,6 +10,13 @@
     color: #3b82f6;
 }
 
+.logo-image {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 0;
+}
+
 footer {
     width: 100%;
     padding: 70px 0 30px;

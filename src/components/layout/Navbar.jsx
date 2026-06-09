@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import { scrollToSection } from '../../utils/scrollUtils';
+import logoImage from '../../assets/icons/logo.png';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -35,10 +36,9 @@ export default function Navbar() {
   return (
     <Container>
       <nav className="navbar">
-        <div className="logo">
-          <i className="fa-solid fa-cloud"></i>
-          Cloud Tech
-        </div>
+        <button className="logo-button" onClick={() => navigate('/')}>
+          <img src={logoImage} alt="Digital Drive Resource Private Limited" className="logo-image" />
+        </button>
 
         <ul className="nav-links">
           <li><button onClick={() => handleNavClick('home')} className="nav-button">Home</button></li>

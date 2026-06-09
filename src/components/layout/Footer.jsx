@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from '../ui/Container';
+import logoImage from '../../assets/icons/logo.png';
 import './Footer.css';
 
 export default function Footer() {
@@ -8,10 +9,7 @@ export default function Footer() {
       <Container>
         <div className="footer-grid">
           <div>
-            <div className="logo">
-              <i className="fa-solid fa-cloud"></i>
-              Cloud Tech
-            </div>
+            <img src={logoImage} alt="Digital Drive Resource Private Limited" className="logo-image" />
 
             <p style={{marginTop: '20px'}}>
               We build modern websites, mobile apps and digital solutions
@@ -52,14 +50,14 @@ export default function Footer() {
             <h4>Contact Us</h4>
             <ul>
               <li>+91 98765 43210</li>
-              <li>hello@cloudtech.com</li>
+              <li>hello@digitaldrive.com</li>
               <li>123, Tech Street, Lucknow, India - 226010</li>
             </ul>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>© 2025 Cloud Tech. All Rights Reserved.</p>
+          <p>© 2025 Digital Drive Resource Private Limited. All Rights Reserved.</p>
           <p>Terms & Conditions</p>
         </div>
       </Container>
