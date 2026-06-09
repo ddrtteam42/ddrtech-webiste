@@ -18,6 +18,11 @@ export default function Navbar() {
     }
   };
 
+  const handleAboutClick = () => {
+    navigate('/about');
+    window.scrollTo(0, 0);
+  };
+
   const handleContactClick = () => {
     if (location.pathname === '/') {
       scrollToSection('contact');
@@ -37,7 +42,7 @@ export default function Navbar() {
 
         <ul className="nav-links">
           <li><button onClick={() => handleNavClick('home')} className="nav-button">Home</button></li>
-          <li><button onClick={() => handleNavClick('about')} className="nav-button">About Us</button></li>
+          <li><button onClick={handleAboutClick} className="nav-button">About Us</button></li>
           <li><button onClick={() => handleNavClick('services')} className="nav-button">Services</button></li>
           <li><button onClick={() => handleNavClick('portfolio')} className="nav-button">Portfolio</button></li>
           <li><button onClick={() => handleNavClick('pricing')} className="nav-button">Pricing</button></li>

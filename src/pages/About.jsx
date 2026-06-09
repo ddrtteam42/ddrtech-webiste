@@ -1,13 +1,28 @@
 import React from 'react';
-import Container from '../components/ui/Container';
+import AboutHero from '../components/about/AboutHero';
+import AboutStats from '../components/about/AboutStats';
+import OurStory from '../components/about/OurStory';
+import MissionVision from '../components/about/MissionVision';
+import WhyChooseUs from '../components/about/WhyChooseUs';
+import TeamSection from '../components/about/TeamSection';
+import ProcessSection from '../components/about/ProcessSection';
+import AchievementsBar from '../components/about/AchievementsBar';
+import TechnologiesTestimonials from '../components/about/TechnologiesTestimonials';
+import AboutCTA from '../components/about/AboutCTA';
 
 export default function About() {
   return (
-    <Container>
-      <section id="about" style={{ padding: '70px 0', textAlign: 'center', minHeight: '60vh' }}>
-        <h1>About Us</h1>
-        <p style={{ color: '#cbd5e1', marginTop: '20px' }}>Coming soon...</p>
-      </section>
-    </Container>
+    <>
+      <AboutHero />
+      <AboutStats />
+      <OurStory />
+      <MissionVision />
+      <WhyChooseUs />
+      <TeamSection />
+      <ProcessSection />
+      <AchievementsBar />
+      <TechnologiesTestimonials />
+      <AboutCTA />
+    </>
   );
 }
