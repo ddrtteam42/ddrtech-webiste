@@ -24,6 +24,11 @@ export default function Navbar() {
     window.scrollTo(0, 0);
   };
 
+  const handleServicesClick = () => {
+    navigate('/services');
+    window.scrollTo(0, 0);
+  };
+
   const handleContactClick = () => {
     if (location.pathname === '/') {
       scrollToSection('contact');
@@ -36,14 +41,17 @@ export default function Navbar() {
   return (
     <Container>
       <nav className="navbar">
-        <button className="logo-button" onClick={() => navigate('/')}>
-          <img src={logoImage} alt="Digital Drive Resource Private Limited" className="logo-image" />
-        </button>
+        <img
+  src={logoImage}
+  alt="Digital Drive Resource Private Limited"
+  className="logo-image"
+  onClick={() => navigate('/')}
+/>
 
         <ul className="nav-links">
-          <li><button onClick={() => handleNavClick('home')} className="nav-button">Home</button></li>
-          <li><button onClick={handleAboutClick} className="nav-button">About Us</button></li>
-          <li><button onClick={() => handleNavClick('services')} className="nav-button">Services</button></li>
+          <li><button onClick={() => handleNavClick('home')} className={`nav-button ${location.pathname === '/' ? 'active' : ''}`}>Home</button></li>
+          <li><button onClick={handleAboutClick} className={`nav-button ${location.pathname === '/about' ? 'active' : ''}`}>About Us</button></li>
+          <li><button onClick={handleServicesClick} className={`nav-button ${location.pathname === '/services' ? 'active' : ''}`}>Services</button></li>
           <li><button onClick={() => handleNavClick('portfolio')} className="nav-button">Portfolio</button></li>
           <li><button onClick={() => handleNavClick('pricing')} className="nav-button">Pricing</button></li>
           <li><button onClick={() => handleNavClick('contact')} className="nav-button">Contact</button></li>

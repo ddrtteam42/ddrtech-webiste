@@ -1,0 +1,115 @@
+.services-section {
+  padding: 100px 0;
+  background: #f8fafc;
+}
+
+.services-section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.services-section-eyebrow {
+  color: #3b82f6;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.services-section-header h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.5rem;
+  color: #020617;
+  font-weight: 800;
+}
+
+.services-section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.services-section-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: left;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.services-section-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  border-color: #2563eb;
+}
+
+.services-section-icon {
+  width: 56px;
+  height: 56px;
+  background: #eff6ff;
+  color: #2563eb;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+}
+
+.services-section-card h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  color: #020617;
+  font-weight: 700;
+}
+
+.services-section-card p {
+  color: #64748b;
+  font-size: 0.95rem;
+  flex-grow: 1;
+  line-height: 1.7;
+}
+
+.services-section-link {
+  color: #2563eb;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.services-section-link:hover {
+  color: #1d4ed8;
+}
+
+@media (max-width: 1024px) {
+  .services-section-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 60px 0;
+  }
+
+  .services-section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-section-header h2 {
+    font-size: 2rem;
+  }
+
+  .services-section-card {
+    padding: 30px;
+  }
+}

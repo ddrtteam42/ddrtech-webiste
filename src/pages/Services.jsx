@@ -1,13 +1,20 @@
 import React from 'react';
-import Container from '../components/ui/Container';
+import ServicesHero from '../components/services/ServicesHero';
+import ServicesGrid from '../components/services/ServicesGrid';
+import WhyChooseServices from '../components/services/WhyChooseServices';
+import ServicesProcess from '../components/services/ServicesProcess';
+import TechStack from '../components/services/TechStack';
+import ServicesCTA from '../components/services/ServicesCTA';
 
 export default function Services() {
   return (
-    <Container>
-      <section id="services" style={{ padding: '70px 0', textAlign: 'center', minHeight: '60vh' }}>
-        <h1>Services</h1>
-        <p style={{ color: '#cbd5e1', marginTop: '20px' }}>Coming soon...</p>
-      </section>
-    </Container>
+    <>
+      <ServicesHero />
+      <ServicesGrid />
+      <WhyChooseServices />
+      <ServicesProcess />
+      <TechStack />
+      <ServicesCTA />
+    </>
   );
 }

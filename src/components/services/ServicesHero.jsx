@@ -1,0 +1,32 @@
+import React from 'react';
+import Container from '../ui/Container';
+import Button from '../ui/Button';
+import heroImage from '../../assets/images/abouthero.png';
+import './ServicesHero.css';
+
+export default function ServicesHero() {
+  return (
+    <section className="services-hero">
+      <div className="services-hero-bg-art"></div>
+      <Container>
+        <div className="services-hero-grid">
+          <div className="services-hero-content">
+            <span className="services-eyebrow">Our Services</span>
+            <h1>Powerful Solutions For Your Business</h1>
+            <p>
+              We deliver innovative, reliable and scalable digital solutions that help businesses grow, automate
+              and succeed in the digital world.
+            </p>
+            <div className="services-hero-btns">
+              <Button>Get Free Consultation</Button>
+              <Button variant="outline">View Portfolio</Button>
+            </div>
+          </div>
+          <div className="services-hero-image">
+            <img src={heroImage} alt="Digital Solutions" />
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}

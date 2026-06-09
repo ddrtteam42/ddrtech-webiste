@@ -1,9 +1,10 @@
-nav {
+/* nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
 }
+
 
 .logo-button {
     display: flex;
@@ -21,7 +22,7 @@ nav {
 }
 
 .logo-image {
-    height: 50px;
+    height: 65px;
     width: auto;
     object-fit: contain;
 }
@@ -45,10 +46,26 @@ nav {
     font-size: 15px;
     cursor: pointer;
     padding: 0;
+    position: relative;
 }
 
 .nav-links .nav-button:hover {
     color: #3b82f6;
+}
+
+.nav-links .nav-button.active {
+    color: #3b82f6;
+}
+
+.nav-links .nav-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #3b82f6;
+    border-radius: 2px;
 }
 
 @media(max-width:700px) {
@@ -64,5 +81,96 @@ nav {
 
     .logo-image {
         height: 40px;
+    }
+} */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: .3s;
+    min-width: 140px; /* reserves space so scaling doesn't affect nav */
+}
+
+.logo-button:hover {
+    opacity: 0.8;
+}
+
+.logo-image {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
+    transform: scale(3); /* increase visual size */
+    transform-origin: center left;
+       top: 14px; /* adjust between 6px-10px if needed */
+       position: relative;
+         margin-left: -50px;
+}
+
+.logo i {
+    color: #3b82f6;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links .nav-button {
+    background: none;
+    border: none;
+    color: #e2e8f0;
+    transition: .3s;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+}
+
+.nav-links .nav-button:hover {
+    color: #3b82f6;
+}
+
+.nav-links .nav-button.active {
+    color: #3b82f6;
+}
+
+.nav-links .nav-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #3b82f6;
+    border-radius: 2px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo-image {
+        height: 40px;
+        transform: scale(1.4);
     }
 }
