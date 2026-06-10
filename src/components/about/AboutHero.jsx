@@ -15,7 +15,7 @@ export default function AboutHero() {
               We Build Digital <span className="accent">Solutions</span> That Drive Growth
             </h1>
             <p>
-              Digital Drive Resource Private Limited is a full-service digital company that helps businesses go online with powerful
+              Digital Drive Resource Tech Private Limited is a full-service digital company that helps businesses go online with powerful
               websites, mobile apps and software solutions. We combine creativity, technology and strategy to
               deliver measurable results.
             </p>

@@ -9,7 +9,7 @@ export default function Footer() {
       <Container>
         <div className="footer-grid">
           <div>
-            <img src={logoImage} alt="Digital Drive Resource Private Limited" className="logo-image" />
+            <img src={logoImage} alt="Digital Drive Resource Tech Private Limited" className="logo-image" />
 
             <p style={{marginTop: '20px'}}>
               We build modern websites, mobile apps and digital solutions
@@ -57,7 +57,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2025 Digital Drive Resource Private Limited. All Rights Reserved.</p>
+          <p>© 2025 Digital Drive Resource Tech Private Limited. All Rights Reserved.</p>
           <p>Terms & Conditions</p>
         </div>
       </Container>

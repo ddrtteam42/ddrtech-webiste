@@ -21,7 +21,7 @@ export default function WhyChooseUs() {
           <div className="feature-panel">
             <div>
               <div className="section-tag">Why Choose Us?</div>
-              <h2 className="section-title">Why Businesses Choose Digital Drive Resource Private Limited</h2>
+              <h2 className="section-title">Why Businesses Choose Digital Drive Resource Tech Private Limited</h2>
               <ul>
                 <li>Experienced and skilled team</li>
                 <li>Custom solutions tailored to your needs</li>

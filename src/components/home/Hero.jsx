@@ -16,13 +16,13 @@ export default function Hero() {
 
            <h1>
             We Build<span> Websites </span>& 
-            <span> Mobile Apps</span>
+            <span> Mobile Apps </span>
             That Drive Growth
           </h1>
 
 
           <p>
-            Digital Drive Resource Private Limited is a full-service digital company that helps businesses
+            Digital Drive Resource Tech Private Limited is a full-service digital company that helps businesses
             go online with powerful websites, mobile apps and software solutions
             for startups, businesses and enterprises.
           </p>
@@ -37,7 +37,7 @@ export default function Hero() {
           <div className="mockup-container">
             <div className="glow-effect"></div>
             <div className="device-mockup">
-              <img src={heroImage} alt="Digital Drive Resource Private Limited Services - Modern Device Mockup" className="hero-image" />
+              <img src={heroImage} alt="Digital Drive Resource Tech Private Limited Services - Modern Device Mockup" className="hero-image" />
             </div>
           </div>
         </div>

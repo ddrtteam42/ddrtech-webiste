@@ -43,7 +43,7 @@ export default function Navbar() {
       <nav className="navbar">
         <img
   src={logoImage}
-  alt="Digital Drive Resource Private Limited"
+  alt="Digital Drive Resource Tech Private Limited"
   className="logo-image"
   onClick={() => navigate('/')}
 />

@@ -9,7 +9,7 @@ const milestones = [
     icon: '🏠',
     year: '2021',
     title: 'Founded',
-    description: 'Digital Drive Resource Private Limited was founded with a small team and big ideas.',
+    description: 'Digital Drive Resource Tech Private Limited was founded with a small team and big ideas.',
   },
   {
     id: 2,
@@ -41,9 +41,9 @@ export default function OurStory() {
         <div className="grid-2">
           <div className="story-copy">
             <div className="section-tag">Our Story</div>
-            <h2 className="section-title">The Journey Behind Digital Drive Resource Private Limited</h2>
+            <h2 className="section-title">The Journey Behind Digital Drive Resource Tech Private Limited</h2>
             <p className="section-desc">
-              Digital Drive Resource Private Limited was founded with a vision to help businesses succeed in digital world.
+              Digital Drive Resource Tech Private Limited was founded with a vision to help businesses succeed in digital world.
               We started as a small team of developers and designers and today we are proud to
               have delivered 50+ successful projects worldwide.
             </p>

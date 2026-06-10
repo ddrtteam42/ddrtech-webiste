@@ -19,7 +19,7 @@ const testimonials = [
   {
     id: 1,
     stars: '★★★★★',
-    quote: 'Digital Drive Resource Private Limited delivered an amazing website for our business. They understood our needs perfectly.',
+    quote: 'Digital Drive Resource Tech Private Limited delivered an amazing website for our business. They understood our needs perfectly.',
     name: 'Rishan Mehta',
     role: 'CEO, Mehta Traders',
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80',
@@ -35,7 +35,7 @@ const testimonials = [
   {
     id: 3,
     stars: '★★★★★',
-    quote: 'Great experience working with Digital Drive Resource Private Limited. Very professional team and on-time delivery.',
+    quote: 'Great experience working with Digital Drive Resource Tech Private Limited. Very professional team and on-time delivery.',
     name: 'Amit Verma',
     role: 'CTO, Verma Industries',
     image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80',
