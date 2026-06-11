@@ -5,40 +5,40 @@ import './TeamSection.css';
 const teamMembers = [
   {
     id: 1,
-    name: 'Rishan Mehta',
-    role: 'CEO & Founder',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80',
+    name: 'Dikshit Singh',
+    role: 'CEO & Director',
+    image: require('../../assets/team_images/DikshitSingh.jpg'),
   },
   {
     id: 2,
-    name: 'Priya Sharma',
-    role: 'Project Manager',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80',
+    name: 'HEENA CHANDEL',
+    role: 'CEO & Founder',
+    image: require('../../assets/team_images/HeenaChandel.jpg'),
   },
   {
     id: 3,
-    name: 'Amit Verma',
-    role: 'CTO',
-    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80',
+    name: 'Divyansh',
+    role: 'Team Lead',
+    image: require('../../assets/team_images/Divyansh.jpg'),
   },
   {
     id: 4,
-    name: 'Neha Singh',
-    role: 'UI/UX Designer',
-    image: 'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=500&q=80',
+    name: 'Aniket Chaudhary',
+    role: 'Full Stack Developer',
+    image: require('../../assets/team_images/aniket.png'),
   },
   {
     id: 5,
-    name: 'Rohit Patel',
-    role: 'Lead Developer',
-    image: 'https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=500&q=80',
+    name: 'Rahul Kaushal',
+    role: 'Full Stack Developer',
+    image: require('../../assets/team_images/Rahul.png'),
   },
-  {
-    id: 6,
-    name: 'Sneha Reddy',
-    role: 'Digital Marketer',
-    image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=500&q=80',
-  },
+  // {
+  //   id: 6,
+  //   name: 'Sneha Reddy',
+  //   role: 'Digital Marketer',
+  //   image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=500&q=80',
+  // },
 ];
 
 export default function TeamSection() {

@@ -29,6 +29,16 @@ export default function Navbar() {
     window.scrollTo(0, 0);
   };
 
+  const handlePortfolioClick = () => {
+    navigate('/portfolio');
+    window.scrollTo(0, 0);
+  };
+
+  const handleTechnologiesClick = () => {
+    navigate('/technologies');
+    window.scrollTo(0, 0);
+  };
+
   const handleContactClick = () => {
     if (location.pathname === '/') {
       scrollToSection('contact');
@@ -52,7 +62,8 @@ export default function Navbar() {
           <li><button onClick={() => handleNavClick('home')} className={`nav-button ${location.pathname === '/' ? 'active' : ''}`}>Home</button></li>
           <li><button onClick={handleAboutClick} className={`nav-button ${location.pathname === '/about' ? 'active' : ''}`}>About Us</button></li>
           <li><button onClick={handleServicesClick} className={`nav-button ${location.pathname === '/services' ? 'active' : ''}`}>Services</button></li>
-          <li><button onClick={() => handleNavClick('portfolio')} className="nav-button">Portfolio</button></li>
+          <li><button onClick={handlePortfolioClick} className={`nav-button ${location.pathname === '/portfolio' ? 'active' : ''}`}>Portfolio</button></li>
+          <li><button onClick={handleTechnologiesClick} className={`nav-button ${location.pathname === '/technologies' ? 'active' : ''}`}>Technologies</button></li>
           <li><button onClick={() => handleNavClick('pricing')} className="nav-button">Pricing</button></li>
           <li><button onClick={() => handleNavClick('contact')} className="nav-button">Contact</button></li>
         </ul>

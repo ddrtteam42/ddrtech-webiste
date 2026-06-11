@@ -51,7 +51,7 @@ export default function Footer() {
             <ul>
               <li>+91 98765 43210</li>
               <li>hello@digitaldrive.com</li>
-              <li>123, Tech Street, Lucknow, India - 226010</li>
+              <li>Plot no.257,Ind.Area Phase-IX,Mohali-160062 Chandigarh (INDIA)</li>
             </ul>
           </div>
         </div>
