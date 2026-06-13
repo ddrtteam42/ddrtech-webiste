@@ -1,9 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Container from '../ui/Container';
 import logoImage from '../../assets/icons/logo.png';
 import './Footer.css';
 
 export default function Footer() {
+  const navigate = useNavigate();
+
+  const handleNavigation = (path) => {
+    navigate(path);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <footer>
       <Container>
@@ -27,11 +35,12 @@ export default function Footer() {
           <div>
             <h4>Quick Links</h4>
             <ul>
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Portfolio</li>
-              <li>Pricing</li>
+              <li onClick={() => handleNavigation('/')} style={{ cursor: 'pointer' }}>Home</li>
+              <li onClick={() => handleNavigation('/about')} style={{ cursor: 'pointer' }}>About Us</li>
+              <li onClick={() => handleNavigation('/services')} style={{ cursor: 'pointer' }}>Services</li>
+              <li onClick={() => handleNavigation('/portfolio')} style={{ cursor: 'pointer' }}>Portfolio</li>
+              <li onClick={() => handleNavigation('/technologies')} style={{ cursor: 'pointer' }}>Technologies</li>
+              <li onClick={() => handleNavigation('/pricing')} style={{ cursor: 'pointer' }}>Pricing</li>
             </ul>
           </div>
 
@@ -49,8 +58,8 @@ export default function Footer() {
           <div>
             <h4>Contact Us</h4>
             <ul>
-              <li>+91 98765 43210</li>
-              <li>hello@digitaldrive.com</li>
+              <li>+91 83606 86961</li>
+              <li>hellodigitaldriveresourcetech@gmail.com</li>
               <li>Plot no.257,Ind.Area Phase-IX,Mohali-160062 Chandigarh (INDIA)</li>
             </ul>
           </div>

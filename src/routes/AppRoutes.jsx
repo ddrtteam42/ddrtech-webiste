@@ -4,6 +4,8 @@ import About from "../pages/About";
 import Services from "../pages/Services";
 import PortfolioPage from "../pages/PortfolioPage";
 import Technologies from "../pages/Technologies";
+import Pricing from "../pages/Pricing";
+import Contact from "../pages/Contact";
 
 export default function AppRoutes() {
   return (
@@ -13,6 +15,8 @@ export default function AppRoutes() {
       <Route path="/services" element={<Services />} />
       <Route path="/portfolio" element={<PortfolioPage />} />
       <Route path="/technologies" element={<Technologies />} />
+      <Route path="/pricing" element={<Pricing />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import './TechnologiesHero.css';
-
+import heroImage from '../../assets/images/technologiesHero.png';
 export default function TechnologiesHero() {
   return (
     <section className="technologies-hero">
@@ -10,7 +10,7 @@ export default function TechnologiesHero() {
         <div className="technologies-hero-inner">
           <div className="technologies-hero-text">
             <div className="technologies-eyebrow">OUR TECHNOLOGIES</div>
-            <h1>Powering Solutions With The <span>Best Technologies</span></h1>
+            <h1>Powering Solutions <br></br>With The <span>Best Technologies</span></h1>
             <p>
               We use modern, secure and scalable technologies to build high-performance digital solutions that
               drive business growth and deliver exceptional user experiences.
@@ -22,15 +22,9 @@ export default function TechnologiesHero() {
           </div>
           <div className="technologies-hero-visual">
             <div className="technologies-glow"></div>
-            <div className="technologies-stack">
-              <div className="technologies-layer l1"></div>
-              <div className="technologies-layer l2"></div>
-              <div className="technologies-layer l3"></div>
+            <div className="device-mockup">
+              <img src={heroImage} alt="Digital Drive Resource Tech Private Limited Services - Modern Device Mockup" className="hero-image" />
             </div>
-            <div className="technologies-float-icon fi1">&lt;/&gt;</div>
-            <div className="technologies-float-icon fi2">⚙</div>
-            <div className="technologies-float-icon fi3">💻</div>
-            <div className="technologies-float-icon fi4">🎯</div>
           </div>
         </div>
       </Container>

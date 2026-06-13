@@ -22,7 +22,7 @@ export default function PortfolioHero() {
           </div>
           <div className="portfolio-hero-visual">
             <div className="portfolio-glow"></div>
-           <div className="Port-device-mockup">
+           <div className="device-mockup">
               <img src={heroImage} alt="Digital Drive Resource Tech Private Limited Services - Modern Device Mockup" className="port-hero-image" />
             </div>
             

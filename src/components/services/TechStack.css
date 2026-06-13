@@ -29,7 +29,7 @@
 
 .tech-stack-grid {
   display: grid;
-  grid-template-columns: repeat(10, 75px);
+  grid-template-columns: repeat(10, 60px);
   justify-content: center;
   gap: 80px;
 }
@@ -51,17 +51,17 @@
   height: 75px;
   border-radius: 10px;
   background: #eff6ff;
-  border: 1px solid #2563ff;
+   /* border: 1px solid #2563ff; */
   display: grid;
   place-items: center;
   font-size: 1.6rem;
   font-weight: 800;
-  color: #2563ff;
+  /* color: #2563ff; */
   box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
 }
 
 .tech-stack-item:hover .tech-stack-logo {
-  background: #2563eb;
+  /* background: #2563eb; */
   color: white;
 }
 

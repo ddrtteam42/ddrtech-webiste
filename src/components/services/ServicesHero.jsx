@@ -22,8 +22,14 @@ export default function ServicesHero() {
               <Button variant="outline">View Portfolio</Button>
             </div>
           </div>
-          <div className="services-hero-image">
+          {/* <div className="services-hero-image">
             <img src={heroImage} alt="Digital Solutions" />
+          </div> */}
+          <div className="services-hero-visual">
+            <div className="services-glow"></div>
+             <div className="device-mockup">
+              <img src={heroImage} alt="Digital Solutions" className="hero-image"/>
+            </div>
           </div>
         </div>
       </Container>

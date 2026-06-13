@@ -26,7 +26,7 @@ const processSteps = [
   },
   {
     id: 4,
-    icon: '</>',
+    icon: '💻',
     number: '04',
     title: 'Develop',
     description: 'We build fast, secure and scalable solutions.',

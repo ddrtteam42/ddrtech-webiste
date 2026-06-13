@@ -40,6 +40,13 @@ footer {
     line-height: 1.8;
     margin-bottom: 10px;
     list-style: none;
+    transition: all 0.3s ease;
+}
+
+.footer-grid li[style*="cursor: pointer"]:hover {
+    color: #3b82f6;
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.6), 0 0 20px rgba(59, 130, 246, 0.4);
+    transform: translateX(5px);
 }
 
 .socials {

@@ -1,13 +1,18 @@
 import React from 'react';
-import Container from '../components/ui/Container';
+import PricingHero from '../components/pricing/PricingHero';
+import PricingPlans from '../components/pricing/PricingPlans';
+import PricingCompare from '../components/pricing/PricingCompare';
+import PricingFAQ from '../components/pricing/PricingFAQ';
+import PricingCTA from '../components/pricing/PricingCTA';
 
 export default function Pricing() {
   return (
-    <Container>
-      <section id="pricing" style={{ padding: '70px 0', textAlign: 'center', minHeight: '60vh' }}>
-        <h1>Pricing Plans</h1>
-        <p style={{ color: '#cbd5e1', marginTop: '20px' }}>Coming soon...</p>
-      </section>
-    </Container>
+    <>
+      <PricingHero />
+      <PricingPlans />
+      <PricingCompare />
+      <PricingFAQ />
+      <PricingCTA />
+    </>
   );
 }

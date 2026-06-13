@@ -1,5 +1,5 @@
 .port-testimonials-section {
-  background: #ffffff;
+  background: transparent;
   padding: 60px 0;
 }
 .port-testimonial-grid {
@@ -10,7 +10,7 @@
     
 }
 .port-testimonials-section h2 {
-    color: #0b1530 !important;
+    color: #f1f5f9 !important;
 }
 
 .port-testimonial {
@@ -22,12 +22,17 @@
     transition:
         transform 0.35s ease,
         box-shadow 0.35s ease,
-        border-color 0.35s ease;
+        border-color 0.35s ease,
+        background 0.35s ease;
 }
 .port-testimonial:hover {
     transform: translateY(-12px);
-    box-shadow: 0 20px 40px rgba(2, 6, 23, 0.18);
-    border-color: #3b82f6;
+    background: linear-gradient(135deg, rgba(7, 16, 29, 0.95), rgba(14, 42, 102, 0.45));
+    box-shadow:
+        0 0 18px rgba(59, 130, 246, 0.35),
+        0 0 40px rgba(59, 130, 246, 0.18),
+        0 20px 40px rgba(2, 6, 23, 0.22);
+    border-color: rgba(59, 130, 246, 0.8);
 }
 
 .port-stars {

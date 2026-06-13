@@ -1,5 +1,5 @@
 .technologies-section {
-  background: #f7f9fc;
+  background: transparent;
   padding: 60px 0;
 }
 
@@ -17,13 +17,13 @@
   text-align: center;
   font-size: 32px;
   font-weight: 800;
-  color: #0b1530;
+  color: #f1f5f9;
   margin-bottom: 14px;
 }
 
 .technologies-sec-sub {
   text-align: center;
-  color: #6b7280;
+  color: #cbd5e1;
   font-size: 15px;
   max-width: 560px;
   margin: 0 auto 44px;
@@ -37,18 +37,20 @@
 }
 
 .technologies-tcard {
-  background: #fff;
-  border: 1px solid #eef1f6;
+  background: transparent;
+  border: 1px solid rgba(59, 130, 246, 0.2);
   border-radius: 14px;
   padding: 26px 16px;
   text-align: center;
-  box-shadow: 0 6px 18px rgba(15, 30, 70, 0.04);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
   transition: 0.25s;
 }
 
 .technologies-tcard:hover {
   transform: translateY(-6px);
-  box-shadow: 0 14px 30px rgba(59, 130, 246, 0.14);
+  box-shadow: 0 14px 30px rgba(59, 130, 246, 0.3);
+  background: rgba(59, 130, 246, 0.05);
+  border-color: rgba(59, 130, 246, 0.4);
 }
 
 .technologies-badge {
@@ -66,13 +68,13 @@
 
 .technologies-tcard h3 {
   font-size: 17px;
-  color: #0b1530;
+  color: #f1f5f9;
   margin-bottom: 10px;
   font-weight: 700;
 }
 
 .technologies-tcard p {
-  color: #6b7280;
+  color: #cbd5e1;
   font-size: 13px;
   line-height: 1.6;
 }

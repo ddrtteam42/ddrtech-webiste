@@ -121,12 +121,11 @@
 }
 
 .portfolio-glow {
-  position: absolute;
-  width: 420px;
+ position: absolute;
+  width: 350px;
   height: 300px;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.3), transparent 70%);
-  border-radius: 50%;
-   left: 28%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.35), transparent 70%);
+  filter: blur(60px);
 }
 
 .portfolio-laptop {

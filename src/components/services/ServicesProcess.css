@@ -191,7 +191,7 @@
 .services-process-circle {
   width: 64px;
   height: 64px;
-  background: #2563eb;
+  /* background: #2563eb; */
   color: #fff;
   border-radius: 50%;
   display: grid;
@@ -204,7 +204,7 @@
 
 .services-process-step:hover .services-process-circle {
   transform: scale(1.1);
-  box-shadow: 0 0 30px rgba(37, 99, 235, 0.6);
+  box-shadow: 0 0 30px rgba(11, 60, 167, 0.6);
 }
 
 .services-step-num {

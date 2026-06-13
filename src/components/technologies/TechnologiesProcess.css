@@ -1,5 +1,5 @@
 .technologies-process {
-  background: #fff;
+  background: transparent;
   padding: 50px 0 60px;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .technologies-step-num {
-  color: #0b1530;
+  color: #f1f5f9;
   font-weight: 800;
   font-size: 15px;
   margin-bottom: 6px;
@@ -48,14 +48,14 @@
 
 .technologies-step h4 {
   font-size: 15px;
-  color: #0b1530;
+  color: #f1f5f9;
   margin-bottom: 6px;
   font-weight: 700;
 }
 
 .technologies-step p {
   font-size: 12px;
-  color: #6b7280;
+  color: #cbd5e1;
   padding: 0 6px;
   line-height: 1.6;
 }

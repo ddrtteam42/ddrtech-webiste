@@ -1,5 +1,5 @@
 .portfolio-industries {
-  background: #fff;
+  background: transparent;
   padding: 60px 0 0px ;
 }
 
@@ -11,18 +11,19 @@
 }
 
 .portfolio-ind {
-  border: 1px solid #e8edf6;
+  border: 1px solid rgba(59, 130, 246, 0.2);
   border-radius: 12px;
   padding: 22px 10px;
   text-align: center;
   transition: 0.2s;
-  background: #fff;
+  background: transparent;
 }
 
 .portfolio-ind:hover {
-  box-shadow: 0 10px 24px rgba(59, 130, 246, 0.12);
+  box-shadow: 0 10px 24px rgba(59, 130, 246, 0.3);
   transform: translateY(-4px);
   border-color: #3b82f6;
+  background: rgba(59, 130, 246, 0.05);
 }
 
 .portfolio-ind-ico {
@@ -39,7 +40,7 @@
 
 .portfolio-ind span {
   font-size: 13px;
-  color: #33415c;
+  color: #f1f5f9;
   font-weight: 600;
   display: block;
 }

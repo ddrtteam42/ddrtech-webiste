@@ -2,8 +2,30 @@ import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import './TechnologiesCTA.css';
-
+import { useNavigate, useLocation } from 'react-router-dom';
+import { scrollToSection } from '../../utils/scrollUtils';
 export default function TechnologiesCTA() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleContactClick = () => {
+    navigate('/contact');
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  const handleQuoteClick = () => {
+    if (location.pathname === '/') {
+      scrollToSection('contact');
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        scrollToSection('contact');
+      }, 100);
+    }
+  };
   return (
     <div className="technologies-cta-wrap">
       <Container>
@@ -17,7 +39,13 @@ export default function TechnologiesCTA() {
           </div>
           <div className="technologies-cta-right">
             <Button>Get a Free Quote</Button>
-            <Button variant="outline">Contact Us</Button>
+             <Button
+                          variant="outline"
+                          onClick={handleContactClick}
+                          className={location.pathname === '/contact' ? 'active' : ''}
+                        >
+                          Contact Us
+                        </Button>
           </div>
         </div>
       </Container>

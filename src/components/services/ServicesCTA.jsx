@@ -1,48 +1,58 @@
-// import React from 'react';
-// import Container from '../ui/Container';
-// import Button from '../ui/Button';
-// import './ServicesCTA.css';
 
-// export default function ServicesCTA() {
-//   return (
-//     <section className="services-cta-section">
-//       <Container>
-//         <div className="services-cta-container">
-//           <div className="services-cta-text">
-//             <h2>Ready To Grow Your Business?</h2>
-//             <p>Let's build powerful digital solutions together.</p>
-//           </div>
-//           <div className="services-cta-btns">
-//             <Button>Get a Free Quote</Button>
-//             <Button variant="outline">Contact Us</Button>
-//           </div>
-//         </div>
-//       </Container>
-//     </section>
-//   );
-// }
 
 import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import './ServicesCTA.css';
+import { scrollToSection } from '../../utils/scrollUtils';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 export default function ServicesCTA() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleContactClick = () => {
+    navigate('/contact');
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  const handleQuoteClick = () => {
+    if (location.pathname === '/') {
+      scrollToSection('contact');
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        scrollToSection('contact');
+      }, 100);
+    }
+  };
+
   return (
-    <section className="services-cta-section">
+    <div className="portfolio-cta-wrap">
       <Container>
-        <div className="cta">
-          <div className="left">
-            <div className="cta-icon">🚀</div>
+        <div className="portfolio-cta">
+          <div className="portfolio-cta-left">
+            <div className="portfolio-cta-rocket">🚀</div>
             <div>
-              <h3>Ready To Grow Your Business?</h3>
-              <p>Let's build powerful digital solutions together.</p>
+              <h2>Have A Project In Mind?</h2>
+              <p>Let's build your next digital success story together.</p>
             </div>
           </div>
-          <Button>Get a Free Quote</Button>
-          <Button variant="outline">Contact Us</Button>
+          <div className="portfolio-cta-right">
+            <Button >Get a Free Quote</Button>
+            <Button
+              variant="outline"
+              onClick={handleContactClick}
+              className={location.pathname === '/contact' ? 'active' : ''}
+            >
+              Contact Us
+            </Button>
+          </div>
         </div>
       </Container>
-    </section>
+    </div>
   );
 }

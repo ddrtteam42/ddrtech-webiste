@@ -1,23 +1,62 @@
+
+
 import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
+import { scrollToSection } from '../../utils/scrollUtils';
 import './AboutCTA.css';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 export default function AboutCTA() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleContactClick = () => {
+    navigate('/contact');
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  const handleQuoteClick = () => {
+    if (location.pathname === '/') {
+      scrollToSection('contact');
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        scrollToSection('contact');
+      }, 100);
+    }
+  };
+
   return (
-    <section className="about-cta-section">
+    <div className="portfolio-cta-wrap">
       <Container>
-        <div className="cta">
-          <div className="left">
-            <div className="cta-icon">🚀</div>
+        <div className="portfolio-cta">
+          <div className="portfolio-cta-left">
+            <div className="portfolio-cta-rocket">🚀</div>
             <div>
-              <h3>Have a project in mind?</h3>
+              <h2>Have A Project In Mind?</h2>
               <p>Let's build something amazing together.</p>
             </div>
           </div>
-          <Button>Get a Free Quote</Button>
+
+          <div className="portfolio-cta-right">
+            <Button >
+              Get a Free Quote
+            </Button>
+
+            <Button
+              variant="outline"
+              onClick={handleContactClick}
+              className={location.pathname === '/contact' ? 'active' : ''}
+            >
+              Contact Us
+            </Button>
+          </div>
         </div>
       </Container>
-    </section>
+    </div>
   );
 }

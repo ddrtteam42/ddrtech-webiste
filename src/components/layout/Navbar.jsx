@@ -39,13 +39,14 @@ export default function Navbar() {
     window.scrollTo(0, 0);
   };
 
+  const handlePricingClick = () => {
+    navigate('/pricing');
+    window.scrollTo(0, 0);
+  };
+
   const handleContactClick = () => {
-    if (location.pathname === '/') {
-      scrollToSection('contact');
-    } else {
-      navigate('/');
-      setTimeout(() => scrollToSection('contact'), 100);
-    }
+    navigate('/contact');
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -64,11 +65,11 @@ export default function Navbar() {
           <li><button onClick={handleServicesClick} className={`nav-button ${location.pathname === '/services' ? 'active' : ''}`}>Services</button></li>
           <li><button onClick={handlePortfolioClick} className={`nav-button ${location.pathname === '/portfolio' ? 'active' : ''}`}>Portfolio</button></li>
           <li><button onClick={handleTechnologiesClick} className={`nav-button ${location.pathname === '/technologies' ? 'active' : ''}`}>Technologies</button></li>
-          <li><button onClick={() => handleNavClick('pricing')} className="nav-button">Pricing</button></li>
-          <li><button onClick={() => handleNavClick('contact')} className="nav-button">Contact</button></li>
+          <li><button onClick={handlePricingClick} className={`nav-button ${location.pathname === '/pricing' ? 'active' : ''}`}>Pricing</button></li>
+          <li><button onClick={handleContactClick} className={`nav-button ${location.pathname === '/contact' ? 'active' : ''}`}>Contact</button></li>
         </ul>
 
-        <Button onClick={() => handleContactClick()}>Get a Free Quote</Button>
+        <Button onClick={handleContactClick}>Get a Free Quote</Button>
       </nav>
     </Container>
   );
