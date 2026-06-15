@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import { scrollToSection } from '../../utils/scrollUtils';
-import heroImage from '../../assets/images/heroimage.png';
+import heroImage from '../../assets/images/heroimage.webp';
 import './Hero.css';
 
 export default function Hero() {

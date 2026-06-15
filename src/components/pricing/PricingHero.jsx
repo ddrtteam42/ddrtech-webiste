@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import './PricingHero.css';
-import heroImage from '../../assets/images/PricingHero.png';
+import heroImage from '../../assets/images/PricingHero.webp';
 export default function PricingHero() {
   return (
     <section className="pricing-hero">

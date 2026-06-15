@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import './TechnologiesHero.css';
-import heroImage from '../../assets/images/technologiesHero.png';
+import heroImage from '../../assets/images/technologiesHero.webp';
 export default function TechnologiesHero() {
   return (
     <section className="technologies-hero">

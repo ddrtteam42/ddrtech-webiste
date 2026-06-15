@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import './PortfolioHero.css';
-import heroImage from '../../assets/images/PortHeroImage.png';
+import heroImage from '../../assets/images/PortHeroImage.webp';
 export default function PortfolioHero() {
   return (
     <section className="portfolio-hero">

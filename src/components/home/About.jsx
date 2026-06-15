@@ -4,7 +4,7 @@ import Card from '../ui/Card';
 import Button from '../ui/Button';
 import { scrollToSection } from '../../utils/scrollUtils';
 import './About.css';
-import officeImage from "../../assets/images/Office.png";
+import officeImage from "../../assets/images/Office.webp";
 
 export default function About() {
   return (

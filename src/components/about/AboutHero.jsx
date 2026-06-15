@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
-import officeImage from '../../assets/images/Office.png';
+import officeImage from '../../assets/images/Office.webp';
 import './AboutHero.css';
 
 export default function AboutHero() {

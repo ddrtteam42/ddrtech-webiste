@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
-import heroImage from '../../assets/images/abouthero.png';
+import heroImage from '../../assets/images/abouthero.webp';
 import './ServicesHero.css';
 
 export default function ServicesHero() {

@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import './ContactHero.css';
-import heroImage from '../../assets/images/ContactHero.png';
+import heroImage from '../../assets/images/ContactHero.webp';
 export default function ContactHero() {
   return (
     <section className="contact-hero">
