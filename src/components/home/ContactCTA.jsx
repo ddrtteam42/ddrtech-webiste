@@ -43,7 +43,7 @@
 import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
-import { scrollToSection } from '../../utils/scrollUtils';
+// import { scrollToSection } from '../../utils/scrollUtils';
 import './ContactCTA.css';
 import { useNavigate, useLocation } from 'react-router-dom';
 
