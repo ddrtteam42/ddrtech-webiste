@@ -19,16 +19,16 @@ export default function AboutCTA() {
     });
   };
 
-  const handleQuoteClick = () => {
-    if (location.pathname === '/') {
-      scrollToSection('contact');
-    } else {
-      navigate('/');
-      setTimeout(() => {
-        scrollToSection('contact');
-      }, 100);
-    }
-  };
+  // const ../assets/images/Protfolio-images/ = () => {
+  //   if (location.pathname === '/') {
+  //     scrollToSection('contact');
+  //   } else {
+  //     navigate('/');
+  //     setTimeout(() => {
+  //       scrollToSection('contact');
+  //     }, 100);
+  //   }
+  // };
 
   return (
     <div className="portfolio-cta-wrap">

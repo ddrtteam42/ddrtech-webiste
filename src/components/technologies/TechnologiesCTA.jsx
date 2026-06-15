@@ -3,7 +3,7 @@ import Container from '../ui/Container';
 import Button from '../ui/Button';
 import './TechnologiesCTA.css';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { scrollToSection } from '../../utils/scrollUtils';
+// import { scrollToSection } from '../../utils/scrollUtils';
 export default function TechnologiesCTA() {
   const navigate = useNavigate();
   const location = useLocation();

@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import './PortfolioCTA.css';
-import { scrollToSection } from '../../utils/scrollUtils';
+// import { scrollToSection } from '../../utils/scrollUtils';
 import { useNavigate, useLocation } from 'react-router-dom';
 export default function PortfolioCTA() {
    const navigate = useNavigate();

@@ -59,16 +59,16 @@ export default function ContactCTA() {
     });
   };
 
-  const handleQuoteClick = () => {
-    if (location.pathname === '/') {
-      scrollToSection('contact');
-    } else {
-      navigate('/');
-      setTimeout(() => {
-        scrollToSection('contact');
-      }, 100);
-    }
-  };
+  // const handleQuoteClick = () => {
+  //   if (location.pathname === '/') {
+  //     scrollToSection('contact');
+  //   } else {
+  //     navigate('/');
+  //     setTimeout(() => {
+  //       scrollToSection('contact');
+  //     }, 100);
+  //   }
+  // };
 
   return (
     <div className="pricing-cta-wrap">
@@ -83,7 +83,7 @@ export default function ContactCTA() {
           </div>
 
           <div className="pricing-cta-right">
-            <Button onClick={handleQuoteClick}>
+            <Button >
               Get a Free Quote
             </Button>
 
