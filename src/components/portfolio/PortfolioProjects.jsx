@@ -87,12 +87,12 @@ import React from 'react';
 import Container from '../ui/Container';
 import './PortfolioProjects.css';
 
-import CRM from '/home/aniket/work/cloud-tech-react/src/assets/images/Protfolio-images/CRM.jpg';
-import Ecom from '/home/aniket/work/cloud-tech-react/src/assets/images/Protfolio-images/Ecom.jpg';
-import HR from '/home/aniket/work/cloud-tech-react/src/assets/images/Protfolio-images/HR.jpg';
-import Realestate from '/home/aniket/work/cloud-tech-react/src/assets/images/Protfolio-images/Realestate.jpg';
-import RestaurantApp from '/home/aniket/work/cloud-tech-react/src/assets/images/Protfolio-images/restaurantapp.jpg';
-import Business from '/home/aniket/work/cloud-tech-react/src/assets/images/Protfolio-images/Corp.jpg';
+import CRM from '../assets/images/Protfolio-images/CRM.jpg';
+import Ecom from '../assets/images/Protfolio-images/Ecom.jpg';
+import HR from '../assets/images/Protfolio-images/HR.jpg';
+import Realestate from '../assets/images/Protfolio-images/Realestate.jpg';
+import RestaurantApp from '../assets/images/Protfolio-images/restaurantapp.jpg';
+import Business from '../assets/images/Protfolio-images/Corp.jpg';
 
 const projectsData = [
   {
