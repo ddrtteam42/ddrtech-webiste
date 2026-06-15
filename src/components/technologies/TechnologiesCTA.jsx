@@ -16,16 +16,16 @@ export default function TechnologiesCTA() {
     });
   };
 
-  const handleQuoteClick = () => {
-    if (location.pathname === '/') {
-      scrollToSection('contact');
-    } else {
-      navigate('/');
-      setTimeout(() => {
-        scrollToSection('contact');
-      }, 100);
-    }
-  };
+  // const handleQuoteClick = () => {
+  //   if (location.pathname === '/') {
+  //     scrollToSection('contact');
+  //   } else {
+  //     navigate('/');
+  //     setTimeout(() => {
+  //       scrollToSection('contact');
+  //     }, 100);
+  //   }
+  // };
   return (
     <div className="technologies-cta-wrap">
       <Container>

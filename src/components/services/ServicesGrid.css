@@ -74,8 +74,30 @@
   flex-grow: 1;
   line-height: 1.7;
 }
-
 .services-section-link {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  color: #2563eb;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: 0.2s ease;
+  cursor: pointer;
+
+  width: auto;
+  align-self: flex-start;
+}
+
+.services-section-link:hover {
+  color: #1d4ed8;
+}
+/* .services-section-link {
   color: #2563eb;
   font-weight: 700;
   display: inline-flex;
@@ -88,7 +110,7 @@
 
 .services-section-link:hover {
   color: #1d4ed8;
-}
+} */
 
 @media (max-width: 1024px) {
   .services-section-grid {
