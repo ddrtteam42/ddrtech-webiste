@@ -1,7 +1,4 @@
-/* .pricing-hero {
-  background: linear-gradient(120deg, #020617, #0a1430 55%, #0f2557);
-  padding: 60px 0 80px;
-} */
+/* Pricing Hero */
 .services-hero {
   background: transparent;
   color: white;
@@ -9,6 +6,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .pricing-hero-inner {
   display: flex;
   align-items: center;
@@ -132,54 +130,171 @@
   border-radius: 4px;
 }
 
-@media (max-width: 1024px) {
+/* Tablet: 768px to 1023px */
+@media (max-width: 1023px) and (min-width: 768px) {
   .pricing-hero-inner {
     flex-direction: column;
     gap: 50px;
   }
 
   .pricing-hero-text h1 {
-    font-size: 42px;
-  }
-}
-
-@media (max-width: 768px) {
-  .pricing-hero {
-    padding: 50px 0 60px;
-  }
-
-  .pricing-hero-text h1 {
-    font-size: 36px;
+    font-size: clamp(2.2rem, 5vw, 3rem);
   }
 
   .pricing-hero-text p {
-    font-size: 15px;
-  }
-
-  .pricing-hero-btns {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .pricing-hero-btns button {
-    width: 100%;
+    font-size: clamp(15px, 2.5vw, 17px);
   }
 
   .pricing-screen {
-    width: 260px;
+    width: 280px;
   }
 }
 
-@media (max-width: 480px) {
+/* Mobile: Below 768px */
+@media (max-width: 767px) {
+  .services-hero {
+    padding: 70px 20px 40px;
+    overflow: hidden;
+  }
+
+  .pricing-hero-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pricing-hero-text {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    order: 1;
+    text-align: left;
+  }
+
+  .pricing-eyebrow {
+    font-size: clamp(11px, 2.5vw, 13px);
+    margin-bottom: 12px;
+  }
+
   .pricing-hero-text h1 {
-    font-size: 28px;
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+    line-height: 1.15;
+    margin-bottom: 14px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+
+  .pricing-hero-text p {
+    font-size: clamp(14px, 4vw, 16px);
+    line-height: 1.6;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .pricing-hero-btns {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    align-items: flex-start;
+  }
+
+  .pricing-hero-btns button,
+  .pricing-hero-btns a {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .pricing-hero-visual {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    order: 2;
+    min-height: auto;
+    position: static;
+    padding: 0;
+    margin: 0;
+  }
+
+  .pricing-screen {
+    width: 100%;
+    max-width: 280px;
+    padding: 20px;
+  }
+
+  .pricing-glow {
+    display: none;
+  }
+
+  .pricing-dollar {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+    margin: 0 auto 20px;
+  }
+
+  .pricing-dots {
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  .pricing-dots i {
+    width: 8px;
+    height: 8px;
+  }
+
+  .pricing-line {
+    font-size: 13px;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .pricing-line .pricing-bar {
+    height: 6px;
+  }
+}
+
+/* Small Mobile: Below 480px */
+@media (max-width: 479px) {
+  .services-hero {
+    padding: 60px 16px 32px;
+  }
+
+  .pricing-hero-text h1 {
+    font-size: clamp(1.5rem, 8vw, 2rem);
   }
 
   .pricing-hero-text p {
     font-size: 14px;
   }
 
-  .pricing-eyebrow {
-    font-size: 11px;
+  .pricing-hero-btns {
+    margin-top: 20px;
+    margin-bottom: 28px;
+  }
+
+  .pricing-hero-btns button,
+  .pricing-hero-btns a {
+    max-width: 100%;
+  }
+
+  .pricing-screen {
+    max-width: 260px;
+    padding: 16px;
+  }
+
+  .pricing-dollar {
+    width: 65px;
+    height: 65px;
+    font-size: 28px;
+    margin: 0 auto 16px;
+  }
+
+  .pricing-line {
+    font-size: 12px;
   }
 }
