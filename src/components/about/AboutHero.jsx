@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
-import officeImage from '../../assets/images/Office.webp';
+//import officeImage from '../../assets/images/Office.webp';
 import './AboutHero.css';
 
 export default function AboutHero() {
@@ -26,10 +26,18 @@ export default function AboutHero() {
           </div>
 
           <div className="hero-media">
-            <img
+            {/* <img
               src={officeImage}
               alt="Office team at work"
-            />
+            /> */}
+            <img
+  src="/images/Office.webp"
+  alt="Office"
+  
+  loading="eager"
+  fetchPriority="high"
+  
+/>
           </div>
 
           <div className="hero-side">

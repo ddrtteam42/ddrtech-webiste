@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import './PortfolioHero.css';
-import heroImage from '../../assets/images/PortHeroImage.webp';
+//import heroImage from '../../assets/images/PortHeroImage.webp';
 export default function PortfolioHero() {
   return (
     <section className="portfolio-hero">
@@ -23,7 +23,15 @@ export default function PortfolioHero() {
           <div className="portfolio-hero-visual">
             <div className="portfolio-glow"></div>
            <div className="device-mockup">
-              <img src={heroImage} alt="Digital Drive Resource Tech Private Limited Services - Modern Device Mockup" className="port-hero-image" />
+
+              <img
+  src="/images/PortHeroImage.webp"
+  alt="Portfolio Projects"
+  className="port-hero-image"
+  loading="lazy"
+  width="1536"
+  height="1024"
+/>
             </div>
             
           </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import './PricingHero.css';
-import heroImage from '../../assets/images/PricingHero.webp';
+//import heroImage from '../../assets/images/PricingHero.webp';
 export default function PricingHero() {
   return (
     <section className="pricing-hero">
@@ -22,7 +22,14 @@ export default function PricingHero() {
           <div className="pricing-hero-visual">
             <div className="pricing-glow"></div>
              <div className="device-mockup">
-              <img src={heroImage} alt="Digital Drive Resource Tech Private Limited Services - Modern Device Mockup" className="hero-image" />
+              <img
+  src="/images/PricingHero.webp"
+  alt="Pricing Plans"
+  className="hero-image"
+  loading="lazy"
+  width="1536"
+  height="1024"
+/>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
-import heroImage from '../../assets/images/abouthero.webp';
+//import heroImage from '../../assets/images/abouthero.webp';
 import './ServicesHero.css';
 
 export default function ServicesHero() {
@@ -28,7 +28,14 @@ export default function ServicesHero() {
           <div className="services-hero-visual">
             <div className="services-glow"></div>
              <div className="device-mockup">
-              <img src={heroImage} alt="Digital Solutions" className="hero-image"/>
+              <img
+  src="/images/abouthero.webp"
+  alt="About Digital Drive Resource Tech"
+  className="hero-image"
+  loading="lazy"
+  width="1536"
+  height="1024"
+/>
             </div>
           </div>
         </div>

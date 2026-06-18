@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import './ContactHero.css';
-import heroImage from '../../assets/images/ContactHero.webp';
+//import heroImage from '../../assets/images/ContactHero.webp';
 export default function ContactHero() {
   return (
     <section className="contact-hero">
@@ -22,7 +22,14 @@ export default function ContactHero() {
           <div className="contact-hero-visual">
             <div className="contact-glow"></div>
             <div className="device-mockup">
-              <img src={heroImage} alt="Digital Drive Resource Tech Private Limited Services - Modern Device Mockup" className="hero-image" />
+              <img
+  src="/images/ContactHero.webp"
+  alt="Contact Digital Drive Resource Tech"
+  className="hero-image"
+  loading="lazy"
+  width="1536"
+  height="1024"
+/>
             </div>
           </div>
         </div>

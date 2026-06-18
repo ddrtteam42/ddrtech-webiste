@@ -4,7 +4,7 @@ import Card from '../ui/Card';
 import Button from '../ui/Button';
 import { scrollToSection } from '../../utils/scrollUtils';
 import './About.css';
-import officeImage from "../../assets/images/Office.webp";
+//import officeImage from "../../assets/images/Office.webp";
 
 export default function About() {
   return (
@@ -28,7 +28,13 @@ export default function About() {
           </Card>
 
           <div className="about-image">
-            <img src={officeImage} alt="Team collaboration" />
+            <img
+  src="/images/Office.webp"
+  alt="Digital Drive Resource Tech Office"
+  loading="lazy"
+  width="1536"
+  height="1024"
+/>
             
           </div>
 

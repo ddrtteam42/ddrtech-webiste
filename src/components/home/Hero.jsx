@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import { scrollToSection } from '../../utils/scrollUtils';
-import heroImage from '../../assets/images/heroimage.webp';
+//import heroImage from '../../assets/images/heroimage.webp';
 import './Hero.css';
 
 export default function Hero() {
@@ -37,7 +37,16 @@ export default function Hero() {
           <div className="mockup-container">
             <div className="glow-effect"></div>
             <div className="device-mockup">
-              <img src={heroImage} alt="Digital Drive Resource Tech Private Limited Services - Modern Device Mockup" className="hero-image" />
+              {/* <img src={heroImage} alt="Digital Drive Resource Tech Private Limited Services - Modern Device Mockup" className="hero-image" /> */}
+             <img
+  src="/images/heroimage.webp"
+  alt="Digital Drive Resource Tech Private Limited Services - Modern Device Mockup"
+  className="hero-image"
+  loading="eager"
+  fetchPriority="high"
+  width="1536"
+  height="1024"
+/>
             </div>
           </div>
         </div>

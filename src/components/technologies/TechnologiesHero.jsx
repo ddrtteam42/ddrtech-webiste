@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import './TechnologiesHero.css';
-import heroImage from '../../assets/images/technologiesHero.webp';
+//import heroImage from '../../assets/images/technologiesHero.webp';
 export default function TechnologiesHero() {
   return (
     <section className="technologies-hero">
@@ -23,7 +23,14 @@ export default function TechnologiesHero() {
           <div className="technologies-hero-visual">
             <div className="technologies-glow"></div>
             <div className="device-mockup">
-              <img src={heroImage} alt="Digital Drive Resource Tech Private Limited Services - Modern Device Mockup" className="hero-image" />
+             <img
+  src="/images/technologiesHero.webp"
+  alt="Technologies We Use"
+  className="hero-image"
+  loading="lazy"
+  width="1536"
+  height="1024"
+/>
             </div>
           </div>
         </div>
