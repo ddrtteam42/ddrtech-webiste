@@ -23,13 +23,13 @@ export default function ContactHero() {
             <div className="contact-glow"></div>
             <div className="device-mockup">
               <img
-  src="/images/ContactHero.webp"
-  alt="Contact Digital Drive Resource Tech"
-  className="hero-image"
-  loading="lazy"
-  width="1536"
-  height="1024"
-/>
+                src="/images/ContactHero.webp"
+                alt="Contact Digital Drive Resource Tech"
+                className="hero-image"
+                loading="lazy"
+                width="1536"
+                height="1024"
+              />
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@ export default function Footer() {
           <div>
             <img src={logoImage} alt="Digital Drive Resource Tech Private Limited" className="logo-image" />
 
-            <p style={{marginTop: '20px'}}>
+            <p style={{ marginTop: '20px' }}>
               We build modern websites, mobile apps and digital solutions
               that help businesses grow and succeed.
             </p>
@@ -41,6 +41,7 @@ export default function Footer() {
               <li onClick={() => handleNavigation('/portfolio')} style={{ cursor: 'pointer' }}>Portfolio</li>
               <li onClick={() => handleNavigation('/technologies')} style={{ cursor: 'pointer' }}>Technologies</li>
               <li onClick={() => handleNavigation('/pricing')} style={{ cursor: 'pointer' }}>Pricing</li>
+              <li onClick={() => handleNavigation('/Internship-Training')} style={{ cursor: 'pointer' }}>Internship & Training</li>
             </ul>
           </div>
 
@@ -59,8 +60,8 @@ export default function Footer() {
             <h4>Contact Us</h4>
             <ul>
               <li>+91 83606 86961</li>
-              <li>hellodigitaldriveresourcetech@gmail.com</li>
-              <li>Plot no.257,Ind.Area Phase-IX,Mohali-160062 Chandigarh (INDIA)</li>
+              <li>admin@digitaldrivetech.com</li>
+              <li>Office No. 507, 5th Floor, E-257, Veerji Tower, Phase 8B, Industrial Area, Sector 74, Mohali, Punjab</li>
             </ul>
           </div>
         </div>

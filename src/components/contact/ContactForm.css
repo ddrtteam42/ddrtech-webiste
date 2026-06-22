@@ -158,7 +158,7 @@
 @media (max-width: 1024px) {
   .contact-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 28px;
   }
 
   .form-heading {
@@ -168,7 +168,7 @@
 
 @media (max-width: 768px) {
   .contact-form-section {
-    padding: 50px 0;
+    padding: 32px 0;
   }
 
   .form-row {
@@ -190,7 +190,7 @@
 
 @media (max-width: 480px) {
   .contact-form-section {
-    padding: 40px 0;
+    padding: 28px 0;
   }
 
   .form-heading {

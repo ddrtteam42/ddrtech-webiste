@@ -5,6 +5,7 @@ import Process from "../components/home/Process";
 import Portfolio from "../components/home/Portfolio";
 import Testimonials from "../components/home/Testimonials";
 import ContactCTA from "../components/home/ContactCTA";
+import '../components/home/HomeMobileFix.css';
 
 export default function Home() {
   return (

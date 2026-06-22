@@ -10,6 +10,9 @@ export default function ContactForm() {
     subject: '',
     message: ''
   });
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e) => {
     setFormData({
@@ -18,9 +21,32 @@ export default function ContactForm() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    setSubmitting(true);
+    setError('');
+    setSubmitted(false);
+
+    try {
+      const res = await fetch('https://ddrtech-backend-production.up.railway.app/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.errors?.[0] || data.message || 'Something went wrong');
+      }
+
+      setSubmitted(true);
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -93,8 +119,18 @@ export default function ContactForm() {
                 ></textarea>
               </div>
 
-              <button type="submit" className="send-btn">
-                Send Message →
+              {submitted && (
+                <p style={{ color: '#10b981', fontWeight: 600, marginBottom: 12 }}>
+                  ✓ Message sent successfully!
+                </p>
+              )}
+              {error && (
+                <p style={{ color: '#ef4444', fontWeight: 500, marginBottom: 12 }}>
+                  ✗ {error}
+                </p>
+              )}
+              <button type="submit" className="send-btn" disabled={submitting}>
+                {submitting ? 'Sending...' : 'Send Message →'}
               </button>
             </form>
           </div>
@@ -116,7 +152,7 @@ export default function ContactForm() {
               <div className="info-icon">✉</div>
               <div>
                 <b>Email</b>
-                <span>hellodigitaldriveresourcetech@gmail.com</span>
+                <span>admin@digitaldrivetech.com</span>
               </div>
             </div>
 
@@ -124,7 +160,7 @@ export default function ContactForm() {
               <div className="info-icon">📍</div>
               <div>
                 <b>Address</b>
-                <span>Plot no.257, Ind.Area Phase-IX, Mohali-160062 Chandigarh (INDIA)</span>
+                <span>Office No. 507, 5th Floor, E-257, Veerji Tower, Phase 8B, Industrial Area, Sector 74, Mohali, Punjab</span>
               </div>
             </div>
 

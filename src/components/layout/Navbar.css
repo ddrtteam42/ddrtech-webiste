@@ -32,6 +32,7 @@ nav.navbar {
     display: flex;
     list-style: none;
     gap: 35px;
+    margin-left: 80px;
 }
 
 .nav-links .nav-button {
@@ -82,6 +83,7 @@ nav.navbar {
     cursor: pointer;
     padding: 0;
     z-index: 101;
+    margin-left: auto;
 }
 
 .hamburger-menu span {
@@ -269,7 +271,7 @@ nav.navbar {
     }
 
     .hamburger-menu {
-        display: flex;
+        display: flex !important;
     }
 
     .mobile-menu {
@@ -277,18 +279,13 @@ nav.navbar {
     }
 
     .logo-image {
-        height: 50px;
-        transform: scale(2);
-        margin-left: -30px;
+        height: 110px;
     }
 }
 
 @media (max-width: 768px) {
     .logo-image {
-        height: 45px;
-        transform: scale(1.8);
-        margin-left: -20px;
-        top: 10px;
+        height: 100px;
     }
 
     nav.navbar {
@@ -298,10 +295,7 @@ nav.navbar {
 
 @media (max-width: 480px) {
     .logo-image {
-        height: 40px;
-        transform: scale(1.5);
-        margin-left: -10px;
-        top: 8px;
+        height: 75px;
     }
 
     .mobile-nav-links .nav-button {
