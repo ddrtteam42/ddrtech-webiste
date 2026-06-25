@@ -1,37 +1,57 @@
 import React from 'react';
-import Container from '../ui/Container';
-import Card from '../ui/Card';
-import Button from '../ui/Button';
-import SectionTitle from '../ui/SectionTitle';
 import { useNavigate } from 'react-router-dom';
+import Container from '../ui/Container';
+import SectionTitle from '../ui/SectionTitle';
+import Button from '../ui/Button';
 import projects from '../../data/projects';
 import stats from '../../data/stats';
+import '../portfolio/PortfolioProjects.css';
 import './Portfolio.css';
-import './Stats.css';
 
 export default function Portfolio() {
   const navigate = useNavigate();
+
   return (
     <Container>
       <section id="portfolio">
-        <div className="projects-grid">
-          <Card className="intro-card">
-            <SectionTitle
-              tag="Our Work"
-              title="Some Of Our Recent Projects"
-            />
-            <Button onClick={() => navigate('/portfolio')}>View All Projects</Button>
-          </Card>
+        <div className="home-projects">
+          <SectionTitle
+            tag="Our Work"
+            title="Some Of Our Recent Projects"
+          />
 
-          {projects.map((project) => (
-            <div key={project.id} className="project-card">
-              <img src={project.image} alt={project.title} />
-              <div className="project-content">
-                <h4>{project.title}</h4>
-                <p>{project.category}</p>
+          <div className="portfolio-grid">
+            {projects.slice(0, 3).map((project) => (
+              <div key={project.id} className="portfolio-pcard">
+                <div className="portfolio-thumb">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="portfolio-thumb-img"
+                  />
+                </div>
+
+                <div className="portfolio-body">
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+
+                  <div className="portfolio-tags">
+                    {project.tags.map((tag, index) => (
+                      <span key={index} className="portfolio-tag">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          <div className="portfolio-view-more">
+            <Button onClick={() => navigate('/portfolio')}>
+              View All Projects
+            </Button>
+          </div>
         </div>
 
         <div className="stats">

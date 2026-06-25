@@ -74,31 +74,10 @@
 // }
 import React from 'react';
 import Container from '../ui/Container';
+import { internshipStats as stats } from '../../data/stats';
 import './InternshipStats.css';
 
 export default function InternshipStats() {
-  const stats = [
-    {
-      icon: 'fas fa-user-graduate',
-      number: '500+',
-      label: 'Students Trained'
-    },
-    {
-      icon: 'fas fa-project-diagram',
-      number: '50+',
-      label: 'Live Projects'
-    },
-    {
-      icon: 'fas fa-chalkboard-teacher',
-      number: '30+',
-      label: 'Expert Mentors'
-    },
-    {
-      icon: 'fas fa-award',
-      number: '100%',
-      label: 'Practical Exposure'
-    }
-  ];
 
   return (
     <section className="stats">

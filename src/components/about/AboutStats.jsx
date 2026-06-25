@@ -1,33 +1,7 @@
 import React from 'react';
 import Container from '../ui/Container';
+import { companyStats as stats } from '../../data/stats';
 import './AboutStats.css';
-
-const stats = [
-  {
-    id: 1,
-    icon: '◎',
-    value: '50+',
-    label: 'Projects Completed',
-  },
-  {
-    id: 2,
-    icon: '👥',
-    value: '30+',
-    label: 'Happy Clients',
-  },
-  {
-    id: 3,
-    icon: '💡',
-    value: '3+',
-    label: 'Years Experience',
-  },
-  {
-    id: 4,
-    icon: '👤',
-    value: '10+',
-    label: 'Expert Team Members',
-  },
-];
 
 export default function AboutStats() {
   return (

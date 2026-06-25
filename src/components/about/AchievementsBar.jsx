@@ -1,36 +1,14 @@
 import React from 'react';
 import Container from '../ui/Container';
+import { companyStats } from '../../data/stats';
 import './AchievementsBar.css';
 
 const achievements = [
-  {
-    id: 1,
-    icon: '◎',
-    value: '50+',
-    label: 'Projects Completed',
-  },
-  {
-    id: 2,
-    icon: '👥',
-    value: '30+',
-    label: 'Happy Clients',
-  },
-  {
-    id: 3,
-    icon: '💡',
-    value: '3+',
-    label: 'Years Experience',
-  },
-  {
-    id: 4,
-    icon: '👤',
-    value: '10+',
-    label: 'Expert Team Members',
-  },
+  ...companyStats,
   {
     id: 5,
     icon: '👍',
-    value: '98%',
+    value: '0',
     label: 'Client Satisfaction',
   },
 ];
@@ -38,11 +16,11 @@ const achievements = [
 export default function AchievementsBar() {
   return (
     <section className="achievements-section">
-     
+
       <Container><p>Our Achievements</p>
-         
+
         <div className="achievement-bar">
-          
+
           <div className="achievement-grid">
             {achievements.map((achievement) => (
               <div key={achievement.id} className="achievement">

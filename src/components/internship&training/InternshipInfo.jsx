@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
+import { internshipStats as stats } from '../../data/stats';
 import './InternshipInfo.css';
 
 export default function InternshipInfo() {
@@ -58,13 +59,6 @@ export default function InternshipInfo() {
       setSubmitting(false);
     }
   };
-
-  const stats = [
-    { icon: 'fas fa-user-graduate', number: '500+', label: 'Students Trained' },
-    { icon: 'fas fa-project-diagram', number: '50+', label: 'Live Projects' },
-    { icon: 'fas fa-chart-line', number: '95%', label: 'Student Satisfaction' },
-    { icon: 'fas fa-chalkboard-teacher', number: '30+', label: 'Industry Mentors' }
-  ];
 
   const programs = [
     { icon: 'fas fa-calendar-alt', text: '4 Weeks Internship', badge: 'Popular' },

@@ -2,12 +2,12 @@
     background: linear-gradient(90deg, #041f6a 0%, #2155b0 100%);
     border: 1px solid #1e293b;
     border-radius: 24px;
-    padding: 50px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    margin: 60px 0;
+    margin: 30px 0;
 }
 
 .cta h2 {
