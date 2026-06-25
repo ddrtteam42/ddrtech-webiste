@@ -70,7 +70,8 @@ footer {
     flex-wrap: wrap;
 }
 
-.socials i {
+.socials i,
+.socials a {
     width: 42px;
     height: 42px;
     border-radius: 50%;
@@ -81,9 +82,13 @@ footer {
     flex-shrink: 0;
     cursor: pointer;
     transition: all 0.3s ease;
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
 }
 
-.socials i:hover {
+.socials i:hover,
+.socials a:hover {
     background: #3b82f6;
     transform: translateY(-3px);
 }

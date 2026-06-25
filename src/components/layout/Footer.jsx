@@ -26,7 +26,7 @@ export default function Footer() {
 
             <div className="socials">
               <i className="fa-brands fa-facebook-f"></i>
-              <i className="fa-brands fa-instagram"></i>
+              <a href="https://www.instagram.com/ddrtech_official" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></a>
               <i className="fa-brands fa-linkedin-in"></i>
               <i className="fa-brands fa-x-twitter"></i>
             </div>
