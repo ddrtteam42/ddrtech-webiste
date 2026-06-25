@@ -2,8 +2,10 @@ import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import './PortfolioHero.css';
+import { useNavigate } from 'react-router-dom';
 //import heroImage from '../../assets/images/PortHeroImage.webp';
 export default function PortfolioHero() {
+  const navigate = useNavigate();
   return (
     <section className="portfolio-hero">
       <Container>
@@ -16,8 +18,11 @@ export default function PortfolioHero() {
               and succeed in the digital world.
             </p>
             <div className="portfolio-hero-btns">
-              <Button>View Projects</Button>
-              <Button variant="outline">Get Free Quote</Button>
+              <Button onClick={() => {
+                const el = document.getElementById('portfolio-projects');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              }}>View Projects</Button>
+              <Button variant="outline" onClick={() => navigate('/contact#contact-form')}>Get Free Quote</Button>
             </div>
           </div>
           <div className="portfolio-hero-visual">

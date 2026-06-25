@@ -3,8 +3,10 @@ import Container from '../ui/Container';
 import Button from '../ui/Button';
 //import officeImage from '../../assets/images/Office.webp';
 import './AboutHero.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function AboutHero() {
+  const navigate = useNavigate();
   return (
     <Container>
       <section className="about-hero">
@@ -20,8 +22,8 @@ export default function AboutHero() {
               deliver measurable results.
             </p>
             <div className="hero-actions">
-              <Button>Our Services</Button>
-              <Button variant="outline">Contact Us</Button>
+              <Button onClick={() => navigate('/services')}>Our Services</Button>
+              <Button variant="outline" onClick={() => navigate('/contact')}>Contact Us</Button>
             </div>
           </div>
 

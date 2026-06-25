@@ -38,7 +38,7 @@ export default function PricingCTA() {
             </div>
           </div>
           <div className="pricing-cta-right">
-            <Button>Get a Free Quote</Button>
+            <Button onClick={() => navigate('/contact#contact-form')}>Get a Free Quote</Button>
             <Button
                           variant="outline"
                           onClick={handleContactClick}

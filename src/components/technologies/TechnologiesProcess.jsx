@@ -1,46 +1,47 @@
 import React from 'react';
 import Container from '../ui/Container';
+import Icon from '../ui/Icon';
 import './TechnologiesProcess.css';
 
 const processSteps = [
   {
     id: 1,
-    icon: '🔍',
+    icon: <Icon name="search" />,
     number: '01',
     title: 'Research',
     description: 'We research and select the best technologies.',
   },
   {
     id: 2,
-    icon: '📋',
+    icon: <Icon name="clipboardList" />,
     number: '02',
     title: 'Plan',
     description: 'We plan the architecture and tech stack.',
   },
   {
     id: 3,
-    icon: '</>',
+    icon: <Icon name="code" />,
     number: '03',
     title: 'Develop',
     description: 'We build with clean and efficient code.',
   },
   {
     id: 4,
-    icon: '✅',
+    icon: <Icon name="checkCircle" />,
     number: '04',
     title: 'Test',
     description: 'We test for performance, security and quality.',
   },
   {
     id: 5,
-    icon: '☁',
+    icon: <Icon name="cloudUpload" />,
     number: '05',
     title: 'Deploy',
     description: 'We deploy and deliver scalable solutions.',
   },
   {
     id: 6,
-    icon: '🎯',
+    icon: <Icon name="target" />,
     number: '06',
     title: 'Support',
     description: 'We provide ongoing support and updates.',

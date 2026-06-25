@@ -186,7 +186,7 @@ export default function InternshipInfo() {
             <Button onClick={() => document.getElementById('apply-form')?.scrollIntoView({ behavior: 'smooth' })}>
               Apply Now <i className="fas fa-arrow-right"></i>
             </Button>
-            <Button variant="outline">
+            <Button variant="outline" href="https://drive.google.com/uc?export=download&id=1mtQ9oTW6jYoahs3IdE8rzU84jtkYeJxC">
               Download Brochure <i className="fas fa-download"></i>
             </Button>
           </div>

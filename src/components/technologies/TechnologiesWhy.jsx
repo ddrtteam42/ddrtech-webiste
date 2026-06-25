@@ -1,35 +1,36 @@
 import React from 'react';
 import Container from '../ui/Container';
+import Icon from '../ui/Icon';
 import './TechnologiesWhy.css';
 
 const whyData = [
   {
     id: 1,
-    icon: '⏱',
+    icon: <Icon name="gauge" />,
     title: 'High Performance',
     description: 'Optimized solutions for speed and efficiency.',
   },
   {
     id: 2,
-    icon: '🛡',
+    icon: <Icon name="shieldCheck" />,
     title: 'Security First',
     description: 'Built with the latest security standards.',
   },
   {
     id: 3,
-    icon: '📚',
+    icon: <Icon name="layers" />,
     title: 'Scalability',
     description: 'Easily scalable to grow with your business.',
   },
   {
     id: 4,
-    icon: '</>',
+    icon: <Icon name="code" />,
     title: 'Clean Code',
     description: 'Maintainable, efficient and well-structured code.',
   },
   {
     id: 5,
-    icon: '⚙',
+    icon: <Icon name="zap" />,
     title: 'Better Experience',
     description: 'Enhanced user experience across all devices.',
   },

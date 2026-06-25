@@ -1,3 +1,7 @@
+/* ===========================
+   CONTACT MAP SECTION
+=========================== */
+
 .contact-map-section {
   background: transparent;
   padding: 0 0 60px;
@@ -10,12 +14,17 @@
   align-items: start;
 }
 
+/* ===========================
+   MAP
+=========================== */
+
 .map-box {
-  border-radius: 20px;
-  overflow: hidden;
-  border: 1px solid #1e293b;
   height: 457px;
+  overflow: hidden;
+  border-radius: 20px;
   background: #07101d;
+  border: 1px solid #1e293b;
+
   box-shadow:
     0 20px 40px rgba(0, 0, 0, 0.25),
     0 0 40px rgba(37, 99, 235, 0.08);
@@ -28,17 +37,25 @@
   display: block;
 }
 
+/* ===========================
+   WHY CARD
+=========================== */
+
 .why-card {
   background: #07101d;
   border: 1px solid #1e293b;
   border-radius: 20px;
   padding: 32px;
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,.20),
+    0 0 30px rgba(37,99,235,.06);
 }
 
 .why-heading {
   font-size: 24px;
   font-weight: 800;
-  color: #f1f5f9;
+  color: #f8fafc;
   margin-bottom: 12px;
 }
 
@@ -46,37 +63,60 @@
   width: 60px;
   height: 4px;
   background: #2563eb;
-  border-radius: 4px;
-  margin-bottom: 24px;
+  border-radius: 999px;
+  margin-bottom: 28px;
+}
+
+/* ===========================
+   LIST
+=========================== */
+
+.why-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .why-item {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 16px 0;
+
+  padding: 18px 22px;
+
+  background: #081321;
+  border: 1px solid #16355c;
+  border-radius: 14px;
+
+  transition: all .3s ease;
 }
 
-.why-circle {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 2px solid #1e3a78;
-  background: #0a1430;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
+.why-item:hover {
+  transform: translateY(-2px);
+  border-color: #2563eb;
+  box-shadow: 0 10px 25px rgba(37,99,235,.15);
+}
+
+.why-item svg {
+  width: 22px;
+  height: 22px;
+  color: #60a5fa;
   flex-shrink: 0;
 }
 
 .why-item span {
-  color: #cbd5e1;
+  color: #e2e8f0;
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.6;
+  font-weight: 500;
 }
 
+/* ===========================
+   TABLET
+=========================== */
+
 @media (max-width: 1024px) {
+
   .map-grid {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -87,7 +127,12 @@
   }
 }
 
+/* ===========================
+   MOBILE
+=========================== */
+
 @media (max-width: 768px) {
+
   .contact-map-section {
     padding: 0 0 50px;
   }
@@ -96,16 +141,25 @@
     height: 300px;
   }
 
-  .why-heading {
-    font-size: 20px;
-  }
-
   .why-card {
     padding: 24px;
+  }
+
+  .why-heading {
+    font-size: 22px;
+  }
+
+  .why-item {
+    padding: 16px 18px;
+  }
+
+  .why-item span {
+    font-size: 14px;
   }
 }
 
 @media (max-width: 480px) {
+
   .contact-map-section {
     padding: 0 0 40px;
   }
@@ -114,13 +168,24 @@
     height: 250px;
   }
 
-  .why-circle {
-    width: 42px;
-    height: 42px;
-    font-size: 18px;
+  .why-card {
+    padding: 20px;
+  }
+
+  .why-heading {
+    font-size: 20px;
+  }
+
+  .why-item {
+    padding: 15px 16px;
+  }
+
+  .why-item svg {
+    width: 20px;
+    height: 20px;
   }
 
   .why-item span {
-    font-size: 14px;
+    font-size: 13px;
   }
 }

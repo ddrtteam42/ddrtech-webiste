@@ -43,7 +43,7 @@ export default function AboutCTA() {
           </div>
 
           <div className="portfolio-cta-right">
-            <Button >
+            <Button onClick={() => navigate('/contact#contact-form')}>
               Get a Free Quote
             </Button>
 

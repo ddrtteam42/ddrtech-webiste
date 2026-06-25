@@ -3,8 +3,10 @@ import Container from '../ui/Container';
 import Button from '../ui/Button';
 //import heroImage from '../../assets/images/abouthero.webp';
 import './ServicesHero.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function ServicesHero() {
+  const navigate = useNavigate();
   return (
     <section className="services-hero">
       <div className="services-hero-bg-art"></div>
@@ -18,8 +20,8 @@ export default function ServicesHero() {
               and succeed in the digital world.
             </p>
             <div className="services-hero-btns">
-              <Button>Get Free Consultation</Button>
-              <Button variant="outline">View Portfolio</Button>
+              <Button onClick={() => navigate('/contact#contact-form')}>Get Free Consultation</Button>
+              <Button variant="outline" onClick={() => navigate('/portfolio')}>View Portfolio</Button>
             </div>
           </div>
           {/* <div className="services-hero-image">

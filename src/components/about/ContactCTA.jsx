@@ -3,7 +3,10 @@ import Container from '../ui/Container';
 import Button from '../ui/Button';
 import './ContactCTA.css';
 
+import { useNavigate } from 'react-router-dom';
+
 export default function ContactCTA() {
+  const navigate = useNavigate();
   return (
     <section className="contact-cta-section">
       <Container>
@@ -16,8 +19,8 @@ export default function ContactCTA() {
             </div>
           </div>
           <div className="contact-cta-right">
-            <Button>Get a Free Quote</Button>
-            <Button variant="outline">Contact Us</Button>
+            <Button onClick={() => navigate('/contact#contact-form')}>Get a Free Quote</Button>
+            <Button variant="outline" onClick={() => navigate('/contact')}>Contact Us</Button>
           </div>
         </div>
       </Container>

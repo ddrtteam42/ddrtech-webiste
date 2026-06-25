@@ -2,8 +2,10 @@ import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import './PricingHero.css';
+import { useNavigate } from 'react-router-dom';
 //import heroImage from '../../assets/images/PricingHero.webp';
 export default function PricingHero() {
+  const navigate = useNavigate();
   return (
     <section className="pricing-hero">
       <Container>
@@ -15,7 +17,7 @@ export default function PricingHero() {
               Choose the perfect plan for your business needs. All plans are scalable and comes with our dedicated support.
             </p>
             <div className="pricing-hero-btns">
-              <Button>Get Free Consultation</Button>
+              <Button onClick={() => navigate('/contact#contact-form')}>Get Free Consultation</Button>
               <Button variant="outline">Compare Plans</Button>
             </div>
           </div>

@@ -38,7 +38,7 @@ export default function PortfolioCTA() {
             </div>
           </div>
           <div className="portfolio-cta-right">
-            <Button>Get a Free Quote</Button>
+            <Button onClick={() => navigate('/contact#contact-form')}>Get a Free Quote</Button>
              <Button
                   variant="outline"
                   onClick={handleContactClick}

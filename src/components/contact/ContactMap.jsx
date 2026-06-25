@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from '../ui/Container';
+import Icon from '../ui/Icon';
 import './ContactMap.css';
 
 export default function ContactMap() {
@@ -17,32 +18,32 @@ export default function ContactMap() {
               title="Company Location"
             />
           </div>
-
           <div className="why-card">
             <div className="why-heading">Why Connect With Us?</div>
             <div className="why-heading-underline"></div>
 
-            <div className="why-item">
-              <div className="why-circle">👥</div>
-              <span>Get expert consultation for your project</span>
-            </div>
+            <div className="why-list">
+              <div className="why-item">
+                <div className="why-circle"><Icon name="users" /></div>
+                <span>Get expert consultation for your project</span>
+              </div>
 
-            <div className="why-item">
-              <div className="why-circle">📋</div>
-              <span>Receive a free quote with no obligation</span>
-            </div>
+              <div className="why-item">
+                <div className="why-circle"><Icon name="pen" /></div>
+                <span>Receive a free quote with no obligation</span>
+              </div>
 
-            <div className="why-item">
-              <div className="why-circle">🎧</div>
-              <span>On-time response and dedicated support</span>
-            </div>
+              <div className="why-item">
+                <div className="why-circle"><Icon name="headphones" /></div>
+                <span>On-time response and dedicated support</span>
+              </div>
 
-            <div className="why-item">
-              <div className="why-circle">⏰</div>
-              <span>We value your time and business</span>
+              <div className="why-item">
+                <div className="why-circle"><Icon name="clock" /></div>
+                <span>We value your time and business</span>
+              </div>
             </div>
           </div>
-
         </div>
       </Container>
     </section>

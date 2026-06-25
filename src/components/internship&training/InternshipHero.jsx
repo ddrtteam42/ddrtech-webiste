@@ -43,7 +43,7 @@ export default function InternshipHero() {
               <Button onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
                 Apply Now <i className="fas fa-arrow-right"></i>
               </Button>
-              <Button variant="outline" className="hero-outline-btn">
+              <Button variant="outline" className="hero-outline-btn" href="https://drive.google.com/uc?export=download&id=1mtQ9oTW6jYoahs3IdE8rzU84jtkYeJxC">
                 Download Brochure <i className="fas fa-download"></i>
               </Button>
             </div>

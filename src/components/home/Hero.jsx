@@ -4,8 +4,10 @@ import Button from '../ui/Button';
 import { scrollToSection } from '../../utils/scrollUtils';
 //import heroImage from '../../assets/images/heroimage.webp';
 import './Hero.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Hero() {
+  const navigate = useNavigate();
   return (
     <Container>
       <section className="hero" id="home">
@@ -29,7 +31,7 @@ export default function Hero() {
 
           <div className="hero-buttons">
             <Button onClick={() => scrollToSection('services')}>Our Services</Button>
-            <Button variant="outline" onClick={() => scrollToSection('contact')}>Contact Us</Button>
+            <Button variant="outline" onClick={() => navigate('/contact')}>Contact Us</Button>
           </div>
         </div>
 

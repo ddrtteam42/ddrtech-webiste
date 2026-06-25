@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
+import { useNavigate } from 'react-router-dom';
 import './OurStory.css';
 
 const milestones = [
@@ -35,6 +36,7 @@ const milestones = [
 ];
 
 export default function OurStory() {
+  const navigate = useNavigate();
   return (
     <section className="our-story-section">
       <Container>
@@ -51,7 +53,7 @@ export default function OurStory() {
               We believe in innovation, quality and long-term partnerships. Our goal is to deliver
               solutions that create real impact.
             </p>
-            <Button>Let's Work Together</Button>
+            <Button onClick={() => navigate('/contact')}>Let's Work Together</Button>
           </div>
 
           <div className="story-line">

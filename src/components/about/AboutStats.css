@@ -1,105 +1,147 @@
-/* FLOATING STATS */
+/* ============================
+   FLOATING STATS
+============================ */
+
 .floating-stats {
-  position: relative;
-  z-index: 20;
-  margin-top: -50px;
-  margin-bottom: -150px;
-  
-  padding: 80px 0;
+    position: relative;
+    z-index: 20;
+
+    /* Pull cards upward */
+    margin-top: -75px;
+    margin-bottom: -75px;
+
+    padding: 0 20px;
 }
 
 .stats-card {
-  max-width: 1200px;
-  margin: 0 auto;
-  background: #ffffff;
-  border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-  border: 1px solid #e5e7eb;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  overflow: hidden;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
 }
 
 .stat-item {
-  padding: 26px 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  position: relative;
-  background: #ffffff;
-  transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 28px 26px;
+    min-height: 130px;
+
+    background: rgba(13, 58, 153, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 22px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.18),
+        0 0 30px rgba(18, 69, 179, 0.08);
+
+    transition: all .35s ease;
 }
 
 .stat-item:hover {
-  background: #f8fafc;
-}
+    transform: translateY(-8px);
 
-.stat-item:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 24px;
-  bottom: 24px;
-  width: 1px;
-  background: #e5e7eb;
+    border-color: rgba(92,140,255,.35);
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,.25),
+        0 0 40px rgba(92,140,255,.25);
 }
 
 .stat-icon {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: #eff6ff;
-  display: grid;
-  place-items: center;
-  color: #2563eb;
-  font-size: 1.7rem;
-  flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: linear-gradient(135deg,#5b7cff,#7197ff);
+
+    color: white;
+    font-size: 28px;
+
+    flex-shrink: 0;
+
+    box-shadow:
+        0 10px 25px rgba(91,124,255,.45),
+        inset 0 1px 2px rgba(255,255,255,.25);
 }
 
-.stat-item strong {
-  display: block;
-  font-family: 'Outfit', sans-serif;
-  font-size: 2.1rem;
-  line-height: 1;
-  margin-bottom: 6px;
-  color: #0f172a;
-  font-weight: 800;
+.stat-content {
+    display: flex;
+    flex-direction: column;
 }
 
-.stat-item span {
-  color: #64748b;
-  font-size: 0.92rem;
-  font-weight: 600;
+.stat-content strong {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 8px;
 }
 
-@media (max-width: 1180px) {
-  .stats-card {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.stat-content span {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #c6d4f7;
+    line-height: 1.4;
 }
 
-@media (max-width: 768px) {
-  .floating-stats {
-    margin-top: -30px;
-    margin-bottom: -80px;
-    padding: 35px 0;
-  }
+/* ============================
+   TABLET
+============================ */
 
-  .stats-card {
-    grid-template-columns: 1fr;
-  }
+@media (max-width:1100px) {
 
-  .stat-item:not(:last-child)::after {
-    display: none;
-  }
+    .stats-card {
+        grid-template-columns: repeat(2,1fr);
+    }
 
-  .stat-item {
-    padding: 24px 18px;
-  }
+}
 
-  .stat-item strong {
-    font-size: 1.8rem;
-  }
+/* ============================
+   MOBILE
+============================ */
+
+@media (max-width:768px) {
+
+    .floating-stats {
+        margin-top: -45px;
+        margin-bottom: -45px;
+        padding: 0 16px;
+    }
+
+    .stats-card {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .stat-item {
+        min-height: 110px;
+        padding: 22px;
+    }
+
+    .stat-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 22px;
+    }
+
+    .stat-content strong {
+        font-size: 2.2rem;
+    }
+
+    .stat-content span {
+        font-size: .95rem;
+    }
+
 }

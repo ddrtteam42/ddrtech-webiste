@@ -3,13 +3,14 @@ import Container from '../ui/Container';
 import Card from '../ui/Card';
 import Button from '../ui/Button';
 import SectionTitle from '../ui/SectionTitle';
-import { scrollToSection } from '../../utils/scrollUtils';
+import { useNavigate } from 'react-router-dom';
 import projects from '../../data/projects';
 import stats from '../../data/stats';
 import './Portfolio.css';
 import './Stats.css';
 
 export default function Portfolio() {
+  const navigate = useNavigate();
   return (
     <Container>
       <section id="portfolio">
@@ -19,7 +20,7 @@ export default function Portfolio() {
               tag="Our Work"
               title="Some Of Our Recent Projects"
             />
-            <Button onClick={() => scrollToSection('portfolio')}>View All Projects</Button>
+            <Button onClick={() => navigate('/portfolio')}>View All Projects</Button>
           </Card>
 
           {projects.map((project) => (

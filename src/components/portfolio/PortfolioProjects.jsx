@@ -147,7 +147,7 @@ const projectsData = [
 
 export default function PortfolioProjects() {
   return (
-    <section className="portfolio-projects">
+    <section className="portfolio-projects" id="portfolio-projects">
       <Container>
         <div className="portfolio-sec-label">Featured Projects</div>
         <h2 className="portfolio-sec-title">Recent Work</h2>

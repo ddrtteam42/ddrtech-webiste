@@ -1,8 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Container from '../ui/Container';
+import { useLocation } from 'react-router-dom';
+import Icon from '../ui/Icon';
 import './ContactForm.css';
 
 export default function ContactForm() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === '#contact-form') {
+      const el = document.getElementById('contact-form');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location]);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -50,7 +60,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="contact-form-section">
+    <section className="contact-form-section" id="contact-form">
       <Container>
         <div className="contact-grid">
           {/* Form */}
@@ -62,7 +72,7 @@ export default function ContactForm() {
             <form onSubmit={handleSubmit}>
               <div className="form-row">
                 <div className="field">
-                  <span className="field-icon">👤</span>
+                  <span className="field-icon"><Icon name="user" /></span>
                   <input
                     type="text"
                     name="name"
@@ -73,7 +83,7 @@ export default function ContactForm() {
                   />
                 </div>
                 <div className="field">
-                  <span className="field-icon">✉</span>
+                  <span className="field-icon"><Icon name="mail" /></span>
                   <input
                     type="email"
                     name="email"
@@ -87,7 +97,7 @@ export default function ContactForm() {
 
               <div className="form-row">
                 <div className="field">
-                  <span className="field-icon">📞</span>
+                  <span className="field-icon"><Icon name="phone" /></span>
                   <input
                     type="tel"
                     name="phone"
@@ -97,7 +107,7 @@ export default function ContactForm() {
                   />
                 </div>
                 <div className="field">
-                  <span className="field-icon">✎</span>
+                  <span className="field-icon"><Icon name="pen" /></span>
                   <input
                     type="text"
                     name="subject"
@@ -109,7 +119,7 @@ export default function ContactForm() {
               </div>
 
               <div className="field field-area">
-                <span className="field-icon">✎</span>
+                <span className="field-icon"><Icon name="message" /></span>
                 <textarea
                   name="message"
                   placeholder="Your Message"
@@ -141,7 +151,7 @@ export default function ContactForm() {
             <div className="form-heading-underline"></div>
 
             <div className="info-item">
-              <div className="info-icon">📞</div>
+              <div className="info-icon"><Icon name="phone" /></div>
               <div>
                 <b>Phone</b>
                 <span>+91 83606 86961</span>
@@ -149,7 +159,7 @@ export default function ContactForm() {
             </div>
 
             <div className="info-item">
-              <div className="info-icon">✉</div>
+              <div className="info-icon"><Icon name="mail" /></div>
               <div>
                 <b>Email</b>
                 <span>admin@digitaldrivetech.com</span>
@@ -157,7 +167,7 @@ export default function ContactForm() {
             </div>
 
             <div className="info-item">
-              <div className="info-icon">📍</div>
+              <div className="info-icon"><Icon name="mapPin" /></div>
               <div>
                 <b>Address</b>
                 <span>Office No. 507, 5th Floor, E-257, Veerji Tower, Phase 8B, Industrial Area, Sector 74, Mohali, Punjab</span>
@@ -165,7 +175,7 @@ export default function ContactForm() {
             </div>
 
             <div className="info-item">
-              <div className="info-icon">🕐</div>
+              <div className="info-icon"><Icon name="clock" /></div>
               <div>
                 <b>Working Hours</b>
                 <span>Mon - Sat: 10:00 AM - 7:00 PM<br />Sunday: Closed</span>

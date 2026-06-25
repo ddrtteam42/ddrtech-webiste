@@ -2,8 +2,10 @@ import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import './TechnologiesHero.css';
+import { useNavigate } from 'react-router-dom';
 //import heroImage from '../../assets/images/technologiesHero.webp';
 export default function TechnologiesHero() {
+  const navigate = useNavigate();
   return (
     <section className="technologies-hero">
       <Container>
@@ -16,8 +18,8 @@ export default function TechnologiesHero() {
               drive business growth and deliver exceptional user experiences.
             </p>
             <div className="technologies-hero-btns">
-              <Button>Our Services</Button>
-              <Button variant="outline">Get Free Quote</Button>
+              <Button onClick={() => navigate('/services')}>Our Services</Button>
+              <Button variant="outline" onClick={() => navigate('/contact#contact-form')}>Get Free Quote</Button>
             </div>
           </div>
           <div className="technologies-hero-visual">

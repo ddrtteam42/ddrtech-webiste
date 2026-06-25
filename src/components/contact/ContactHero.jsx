@@ -2,8 +2,10 @@ import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
 import './ContactHero.css';
+import { useNavigate } from 'react-router-dom';
 //import heroImage from '../../assets/images/ContactHero.webp';
 export default function ContactHero() {
+  const navigate = useNavigate();
   return (
     <section className="contact-hero">
       <Container>
@@ -15,7 +17,7 @@ export default function ContactHero() {
               We're here to help and answer any question you might have. We look forward to hearing from you!
             </p>
             <div className="contact-hero-btns">
-              <Button>Get Free Quote</Button>
+              <Button onClick={() => navigate('/contact#contact-form')}>Get Free Quote</Button>
               <Button variant="outline">Call Us Now</Button>
             </div>
           </div>

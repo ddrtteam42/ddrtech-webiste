@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from '../ui/Container';
 import Button from '../ui/Button';
+import Icon from '../ui/Icon';
 import './TechnologiesCTA.css';
 import { useNavigate, useLocation } from 'react-router-dom';
 // import { scrollToSection } from '../../utils/scrollUtils';
@@ -31,14 +32,14 @@ export default function TechnologiesCTA() {
       <Container>
         <div className="technologies-cta">
           <div className="technologies-cta-left">
-            <div className="technologies-cta-rocket">🚀</div>
+            <div className="technologies-cta-rocket"><Icon name="rocket" /></div>
             <div>
               <h2>Ready To Build Something Amazing?</h2>
               <p>We use the best technologies to turn your ideas into success.</p>
             </div>
           </div>
           <div className="technologies-cta-right">
-            <Button>Get a Free Quote</Button>
+            <Button onClick={() => navigate('/contact#contact-form')}>Get a Free Quote</Button>
              <Button
                           variant="outline"
                           onClick={handleContactClick}
