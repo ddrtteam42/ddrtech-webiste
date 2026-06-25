@@ -1,3 +1,7 @@
+.pricing-cta-wrap {
+  background: #020617;
+}
+
 .cta {
     background: linear-gradient(90deg, #041f6a 0%, #2155b0 100%);
     border: 1px solid #1e293b;

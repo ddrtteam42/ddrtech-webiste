@@ -1,7 +1,6 @@
 /* MISSION & VISION SECTION */
-
 .mission-vision-section {
-  background: #ffffff;
+  background: transparent;
   padding: 60px 0;
   border-top: none;
 }
@@ -14,36 +13,34 @@
 }
 
 .soft-card {
-  border-radius: 14px;
-  border: 1px solid #e5e7eb;
-  background: #f8fafc;
+  border-radius: 0;
+  border: none;
+  background: transparent;
   padding: 40px;
   display: grid;
   grid-template-columns: 80px 1fr;
   gap: 24px;
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
   transition: all 0.3s ease;
 }
 
 .soft-card:hover {
-  border-color: #2563ff;
-  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.12);
+  border-color: #3b82f6;
 }
 
 .soft-card.green {
-  background: #f8fafc;
+  background: transparent;
 }
 
 .soft-icon {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: #ffffff;
-  border: 2px solid #2563ff;
+  background: rgba(37, 99, 235, 0.1);
+  border: 2px solid #3b82f6;
   display: grid;
   place-items: center;
   font-size: 2rem;
-  color: #2563ff;
+  color: #60a5fa;
   box-shadow: 0 2px 8px rgba(37, 99, 235, 0.15);
   flex: 0 0 auto;
   transition: all 0.3s ease;
@@ -51,21 +48,21 @@
 
 .soft-card:hover .soft-icon {
   transform: scale(1.1);
-  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 0 24px rgba(37, 99, 235, 0.4);
 }
 
 .soft-card.green .soft-icon {
   border-color: #10b981;
-  color: #10b981;
+  color: #34d399;
 }
 
 .soft-card.green:hover .soft-icon {
-  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.25);
+  box-shadow: 0 0 24px rgba(16, 185, 129, 0.4);
 }
 
 .soft-card .section-tag {
   margin-bottom: 8px;
-  color: #2563ff;
+  color: #60a5fa;
   text-transform: uppercase;
   font-size: 0.82rem;
   font-weight: 800;
@@ -79,16 +76,15 @@
 
 .soft-card h3 {
   margin: 0 0 12px;
-  font-family: 'Outfit', sans-serif;
   font-size: 1.9rem;
   line-height: 1.15;
-  color: #0f172a;
+  color: #f1f5f9;
   font-weight: 800;
 }
 
 .soft-card p {
   margin: 0;
-  color: #64748b;
+  color: #94a3b8;
   line-height: 1.75;
   font-size: 1rem;
 }

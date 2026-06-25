@@ -1,11 +1,10 @@
 .services-section {
-  /* padding: 100px 0; */
-  background: #f8fafc;
+  background: transparent;
 }
 
 .services-section-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .services-section-eyebrow {
@@ -19,9 +18,8 @@
 }
 
 .services-section-header h2 {
-  font-family: 'Outfit', sans-serif;
   font-size: 2.5rem;
-  color: #020617;
+  color: #f1f5f9;
   font-weight: 800;
 }
 
@@ -32,11 +30,11 @@
 }
 
 .services-section-card {
-  background: #ffffff;
+  background: #07101d;
   padding: 40px;
   border-radius: 16px;
   text-align: left;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #1e293b;
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -52,7 +50,7 @@
 .services-section-icon {
   width: 56px;
   height: 56px;
-  background: #eff6ff;
+  background: rgba(37, 99, 235, 0.15);
   color: #2563eb;
   border-radius: 12px;
   display: grid;
@@ -61,15 +59,14 @@
 }
 
 .services-section-card h3 {
-  font-family: 'Outfit', sans-serif;
   font-size: 1.25rem;
   margin-bottom: 8px;
-  color: #020617;
+  color: #f1f5f9;
   font-weight: 700;
 }
 
 .services-section-card p {
-  color: #64748b;
+  color: #94a3b8;
   font-size: 0.95rem;
   flex-grow: 1;
   line-height: 1.7;
@@ -80,7 +77,7 @@
   padding: 0;
   margin: 0;
 
-  color: #2563eb;
+  color: #3b82f6;
   font-weight: 700;
   display: inline-flex;
   align-items: center;
@@ -95,7 +92,7 @@
 }
 
 .services-section-link:hover {
-  color: #1d4ed8;
+  color: #60a5fa;
 }
 /* .services-section-link {
   color: #2563eb;

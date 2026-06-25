@@ -1,6 +1,6 @@
 /* TECHNOLOGIES & TESTIMONIALS SECTION - ABOUT PAGE */
 .tech-testimonials-section {
-  background: #ffffff;
+  background: transparent;
   padding: 60px 0;
 }
 
@@ -14,15 +14,14 @@
 /* PANELS */
 .tech-panel,
 .testimonials-panel {
-  background: #f8fafc;
-  border: 1px solid #e5e7eb;
-  border-radius: 14px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
   padding: 32px;
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
 }
 
 .section-tag {
-  color: #2563ff;
+  color: #60a5fa;
   text-transform: uppercase;
   font-size: 0.82rem;
   font-weight: 800;
@@ -33,11 +32,9 @@
 
 .section-heading {
   margin: 0 0 18px;
-  font-family: 'Outfit', sans-serif;
   font-size: 1.5rem;
   line-height: 1.2;
-  letter-spacing: -0.02em;
-  color: #0f172a;
+  color: #f1f5f9;
   margin-bottom: 50px;
   font-weight: 800;
 }
@@ -60,32 +57,33 @@
   border-radius: 0;
   background: transparent;
   border: none;
-  transition: all 0.2s ease;
+  transition: transform 0.3s ease;
 }
 
 .tech-item:hover {
-  background: transparent;
-  border-color: transparent;
+  transform: translateY(-6px);
 }
 
 .tech-logo {
   width: 75px;
   height: 75px;
   border-radius: 10px;
-  background: #eff6ff;
-  /* //border: 1px solid #2563ff; */
   display: grid;
   place-items: center;
   font-size: 1.6rem;
   font-weight: 800;
-  color: #2563ff;
-  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
+  color: #60a5fa;
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover .tech-logo {
+  transform: scale(1.1);
 }
 
 .tech-name {
   font-size: 0.88rem;
   font-weight: 600;
-  color: #556f93;
+  color: #94a3b8;
   text-align: center;
   line-height: 1.1;
 }
@@ -98,20 +96,20 @@
 }
 
 .tech-testimonials-section .testimonial {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
   padding: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  transition: all 0.3s ease;
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.35s ease;
 }
 
 .tech-testimonials-section .testimonial:hover {
-  border-color: #2563ff;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(37, 99, 235, 0.3);
 }
 
 .tech-testimonials-section .testimonial-content {
@@ -128,7 +126,7 @@
 
 .tech-testimonials-section .testimonial-quote {
   margin: 0;
-  color: #475569;
+  color: #cbd5e1;
   line-height: 1.5;
   font-size: 0.9rem;
   font-weight: 500;
@@ -140,7 +138,7 @@
   gap: 10px;
   margin-top: 12px;
   padding-top: 12px;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid #1e293b;
 }
 
 .tech-testimonials-section .client-avatar {
@@ -161,7 +159,7 @@
 .tech-testimonials-section .client-name {
   display: block;
   font-size: 0.85rem;
-  color: #0f172a;
+  color: #f1f5f9;
   font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
@@ -170,7 +168,7 @@
 
 .tech-testimonials-section .client-role {
   display: block;
-  color: #64748b;
+  color: #94a3b8;
   font-size: 0.75rem;
   white-space: nowrap;
   overflow: hidden;
@@ -200,7 +198,7 @@
   .tech-panel,
   .testimonials-panel {
     padding: 20px;
-    background: #f8fafc;
+    background: #07101d;
   }
 
   .section-heading {

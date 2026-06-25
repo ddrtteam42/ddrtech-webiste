@@ -1,254 +1,9 @@
 /* OUR STORY SECTION */
 .our-story-section {
-  background: #ffffff;
-  padding: 40px 0 80px 0;
-}
-
-.grid-2 {
-  display: grid;
-  grid-template-columns: 0.95fr 1.35fr;
-  gap: 60px;
-  align-items: start;
-}
-
-.story-copy .section-tag {
-  color: #2563ff;
-  text-transform: uppercase;
-  font-size: 0.82rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  margin-bottom: 12px;
-}
-
-.story-copy .section-title {
-  margin: 0 0 16px;
-  font-family: 'Outfit', sans-serif;
-  font-size: 2.5rem;
-  line-height: 1.08;
-  letter-spacing: -0.03em;
-  color: #0f172a;
-  font-weight: 800;
-}
-
-.section-desc {
-  margin: 0;
-  color: #4b5563;
-  line-height: 1.8;
-  font-size: 1rem;
-}
-
-.story-paragraph {
-  margin-top: 16px !important;
-}
-
-.story-copy button {
-  margin-top: 28px;
-  padding: 13px 22px;
-  font-size: 0.94rem;
-}
-
-.story-line {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  align-items: start;
-  margin-top: 20px;
-}
-
-.milestone {
-  text-align: center;
-  position: relative;
-  padding: 20px;
-  background: #f8fafc;
-  border-radius: 12px;
-  border: 1px solid #e5e7eb;
-  transition: all 0.3s ease;
-}
-
-.milestone:hover {
-  border-color: #2563ff;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
-}
-
-.milestone:not(:last-child)::after {
-  content: '→';
-  position: absolute;
-  right: -28px;
-  top: 35px;
-  color: #2563ff;
-  font-size: 1.7rem;
-  font-weight: 800;
-}
-
-.mile-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 16px;
-  border-radius: 50%;
-  background: #ffffff;
-  border: 2px solid #2563ff;
-  display: grid;
-  place-items: center;
-  color: #2563ff;
-  font-size: 2rem;
-  font-weight: 800;
-  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.15);
-  transition: all 0.3s ease;
-}
-
-.milestone:hover .mile-icon {
-  transform: scale(1.1);
-  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.25);
-}
-
-.milestone .year {
-  display: block;
-  color: #2563ff;
-  font-weight: 800;
-  margin-bottom: 6px;
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.1rem;
-}
-
-.milestone h4 {
-  margin: 0 0 8px;
-  font-size: 1.32rem;
-  font-family: 'Outfit', sans-serif;
-  color: #0f172a;
-  font-weight: 700;
-}
-
-.milestone p {
-  margin: 0;
-  color: #64748b;
-  line-height: 1.65;
-  font-size: 0.95rem;
-}
-
-/* RESPONSIVE DESIGN */
-/*
-@media (max-width: 1180px) {
-  .our-story-section {
-    padding: 60px 0;
-  }
-
-  .grid-2 {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-
-  .story-line {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 20px;
-  }
-
-  .milestone:not(:last-child)::after {
-    display: none;
-  }
-
-  .story-copy .section-title {
-    font-size: 2.2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .our-story-section {
-    padding: 40px 0;
-  }
-
-  .story-copy .section-title {
-    font-size: 1.8rem;
-    margin-bottom: 12px;
-  }
-
-  .section-desc {
-    font-size: 0.95rem;
-  }
-
-  .story-line {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .milestone {
-    padding: 16px;
-    background: #f8fafc;
-  }
-
-  .milestone:not(:last-child)::after {
-    display: none;
-  }
-
-  .mile-icon {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto 12px;
-    font-size: 1.5rem;
-  }
-
-  .milestone h4 {
-    font-size: 1.1rem;
-    margin-bottom: 6px;
-  }
-
-  .milestone p {
-    font-size: 0.9rem;
-  }
-
-  .milestone .year {
-    font-size: 0.95rem;
-    margin-bottom: 4px;
-  }
-
-  .story-copy button {
-    margin-top: 20px;
-    padding: 12px 20px;
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .our-story-section {
-    padding: 30px 0;
-  }
-
-  .story-copy .section-tag {
-    font-size: 0.75rem;
-  }
-
-  .story-copy .section-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-
-  .section-desc {
-    font-size: 0.9rem;
-  }
-
-  .mile-icon {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 10px;
-    font-size: 1.3rem;
-  }
-
-  .milestone h4 {
-    font-size: 1rem;
-  }
-
-  .milestone p {
-    font-size: 0.85rem;
-  }
-} */
-/* OUR STORY SECTION */
-
-.our-story-section {
-  background: #ffffff;
+  background: transparent;
   padding: 70px 0;
   border: none;
   border-top: none;
-  
-
 }
 
 .grid-2 {
@@ -260,7 +15,7 @@
 }
 
 .story-copy .section-tag {
-  color: #2563eb;
+  color: #60a5fa;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 800;
@@ -270,16 +25,15 @@
 
 .story-copy .section-title {
   margin: 0 0 16px;
-  font-family: 'Outfit', sans-serif;
   font-size: 2.6rem;
   line-height: 1.05;
-  color: #0f172a;
+  color: #f1f5f9;
   font-weight: 800;
 }
 
 .section-desc {
   margin: 0;
-  color: #475569;
+  color: #94a3b8;
   line-height: 1.8;
   font-size: 1rem;
 }
@@ -293,7 +47,6 @@
 }
 
 /* TIMELINE */
-
 .story-line {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -315,7 +68,7 @@
   position: absolute;
   right: -22px;
   top: 35px;
-  color: #2563eb;
+  color: #3b82f6;
   font-size: 1.4rem;
   font-weight: 700;
 }
@@ -325,18 +78,23 @@
   height: 90px;
   margin: 0 auto 18px;
   border-radius: 50%;
-  background: #f1f5f9;
+  background: rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
   display: grid;
   place-items: center;
-  border: none;
-  box-shadow: none;
-  color: #2563eb;
+  color: #60a5fa;
   font-size: 2rem;
+}
+
+.milestone:hover .mile-icon {
+  border-color: #3b82f6;
+  background: rgba(37, 99, 235, 0.2);
+  box-shadow: 0 0 24px rgba(59, 130, 246, 0.4);
 }
 
 .milestone .year {
   display: block;
-  color: #2563eb;
+  color: #60a5fa;
   font-weight: 800;
   font-size: 1rem;
   margin-bottom: 6px;
@@ -345,14 +103,13 @@
 .milestone h4 {
   margin: 0 0 8px;
   font-size: 1.4rem;
-  color: #0f172a;
-  font-family: 'Outfit', sans-serif;
+  color: #f1f5f9;
   font-weight: 700;
 }
 
 .milestone p {
   margin: 0;
-  color: #475569;
+  color: #94a3b8;
   line-height: 1.7;
   font-size: 0.95rem;
 }

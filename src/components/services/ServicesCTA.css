@@ -1,5 +1,5 @@
 .services-cta-section {
-  background: #fff;
+  background: transparent;
   padding: 42px 0 0;
   border: none;
 }
@@ -35,18 +35,6 @@
   font-size: 28px;
 }
 
-/* .cta h3 {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 800;
-  margin-bottom: 4px;
-}
-
-.cta p {
-  color: #b9c5dc;
-  font-size: 14.5px;
-  margin: 0;
-} */
 .cta h3 {
   color: #fff;
   font-size: 24px;
