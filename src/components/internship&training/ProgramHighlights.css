@@ -37,6 +37,16 @@
   text-align: center;
 }
 
+.highlights .section-title h2 {
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .highlights .section-title h2 {
+    font-size: 24px;
+  }
+}
+
 .highlights .section-title p {
    font-size: 14px;
   /* color: #6d9fff; */

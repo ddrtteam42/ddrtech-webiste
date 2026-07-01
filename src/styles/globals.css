@@ -17,6 +17,29 @@ body {
     background-image:
         radial-gradient(circle at top right, rgba(37, 99, 235, 0.25), transparent 35%),
         radial-gradient(circle at bottom left, rgba(37, 99, 235, 0.15), transparent 30%);
+    padding-top: 89px;
+}
+
+.nav-spacer {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    body {
+        padding-top: 134px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 124px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 99px;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {

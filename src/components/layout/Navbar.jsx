@@ -10,6 +10,7 @@ export default function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleNavClick = (sectionId) => {
     if (location.pathname === '/') {
@@ -62,6 +63,16 @@ export default function Navbar() {
   };
 
   useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
     if (isMobileMenuOpen) {
       document.body.style.overflow = 'hidden';
     } else {
@@ -92,7 +103,7 @@ export default function Navbar() {
         />
       )}
       <Container>
-        <div className="navbar-wrapper">
+        <div className={`navbar-wrapper ${isScrolled ? 'scrolled' : 'transparent'}`}>
           <nav className="navbar">
             <img
               src={logoImage}

@@ -8,6 +8,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <div className="nav-spacer"></div>
       <AppRoutes />
       <Footer />
     </Router>
