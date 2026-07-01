@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { X } from 'lucide-react';
 import CourseTabs from './CourseTabs';
@@ -25,6 +25,13 @@ export default function CourseModal({ course, onClose }) {
     };
   }, []);
 
+  const handleClose = useCallback(() => {
+    setVisible(false);
+    setTimeout(() => {
+      onClose();
+    }, 200);
+  }, [onClose]);
+
   // ESC and outside click
   useEffect(() => {
     function handleKeyDown(e) {
@@ -32,7 +39,7 @@ export default function CourseModal({ course, onClose }) {
     }
     document.addEventListener('keydown', handleKeyDown);
     return () => document.removeEventListener('keydown', handleKeyDown);
-  }, []);
+  }, [handleClose]);
 
   // Focus trap
   useEffect(() => {
@@ -67,13 +74,6 @@ export default function CourseModal({ course, onClose }) {
 
     return () => document.removeEventListener('keydown', handleFocusTrap);
   }, []);
-
-  function handleClose() {
-    setVisible(false);
-    setTimeout(() => {
-      onClose();
-    }, 200);
-  }
 
   function handleBackdropClick(e) {
     if (e.target === e.currentTarget) handleClose();
